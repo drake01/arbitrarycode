@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html><head><meta http-equiv="content-type" content="text/html; charset=us-ascii"><title>Suggestions for intermediate brainfuck programmers.</title><meta name="description" content="A list of suggestions for intermediate-level programmers of the esoteric language 'brainfuck'."><link rel="icon" href="favicon.ico"><link rel="shortcut icon" href="favicon.ico"></head><body bgcolor="#000000" text="#ffffff" link="#ff0000" vlink="#cc0000">
+<table width=560><tr><td>
+<h2>Suggestions for intermediate <a href="index.html">brainfuck</a> programmers.</h2>
+
+<b>Design early and often.</b> Several things about brainfuck make it more difficult, and maybe more necessary, to maintain conceptual control. In other languages, you can often look at some code in the middle of a program and see what it does; but brainfuck code is almost unintelligible unless you already have a clear idea of what the current state is. Planning your program, and especially its data representation, in advance will prevent a lot of confusion.<br><br>
+
+At the same time, don't hesitate to rethink and redesign every aspect of the program throughout the coding process, even long after the program is working. The first working draft of a brainfuck program is usually too long or too slow by at least a factor of two, and often both. Fortunately, as you gain familiarity with the language and with a given program, you get a better handle on it and it becomes easier and easier to make even large changes without breaking anything. So don't stop too soon.<br><br>
+
+Pay particular attention to designing a data representation that will make your job easy. It's hard to generalize about this, but one useful way to move the pointer around is the breadcrumb technique--arrange a sequence of equally spaced nonzero cells leading to a zero near your destination, then use code like "[&gt;&gt;&gt;]" to get there. If you can make it work, this is much more efficient than using a cell to store the distance to move the pointer and using code like "[-[&gt;&gt;&gt;+&lt;&lt;&lt;-]&gt;&gt;&gt;]", even assuming the distance will fit in a cell--incidentally, it's not a good idea to store a number in a single cell if it may be large.<br><br>
+
+<b>Use nondestructive flow control where appropriate.</b> To deal with variable-sized data it is clearly necessary to use loops that produce net pointer movement. Less obviously, this is often useful even for small fixed-size data. For example, say we have three cells set to <img src="a0b.png" hspace=8 vspace=2 align=top alt="...[A][0][B]..."> and we want to subtract A from B, but without reducing B below zero. We could do something like [&gt;&gt;[-[&lt;+&gt;-]]&lt;[&gt;+&lt;-]&lt;-] or we could save time and code by doing [&gt;&gt;[-&lt;]&lt;[&gt;]&lt;-]. The idea is that if you need a zero, it is cheaper to move the pointer than to move data. Be careful not to lose track of the pointer's location permanently. Incidentally, these techniques are very dependent on data layout, and often require the creation of dummy nonzeroes.<br><br>
+
+<b>Remember that you're programming in brainfuck.</b> It's tempting to avoid confusion and tedium by thinking in terms of higher-level abstractions as much as possible, rather than thinking in brainfuck. This can buy enough control to make a working program, usually at the cost of such inefficiencies as:<br>
+-excessive pointer movement, sometimes as simple as "&gt;+&lt;-&gt;" and sometimes less apparent; often a result of doing things in an intuitively appealing order.<br>
+-using six cells to store six values of which no more than four will ever exist at the same time<br>
+-storing information in a cell that could profitably be "stored" in the pointer or the instruction pointer, or not stored at all<br>
+-including code to deal with cases that will provably not occur, or which existing code would handle correctly though not explicitly designed to do so; or other forms of overly general code<br>
+-things like this:<br><br>
+&gt;++++++++++[&lt;++++++++++&gt;-]&lt;+++++.[-]<br>
+&gt;++++++++++[&lt;++++++++++&gt;-]&lt;+++++++++.[-]<br><br>
+Naturally, all this applies a fortiori to the use of macro languages in connection with brainfuck. Whether it's a problem depends on your goals. If you just want a working program, it may be fine to deal with the language itself as little as possible (though having a tenuous grasp on the low-level events is likely to make debugging harder). But if you want your program to be graceful, you'll need to immerse yourself in the details.<br><br>
+
+And now for a full-scale case study (or rather a case <b>to</b> study, since I'm not going to provide detailed commentary): the first working version of <a href="random.b">random.b</a>. This is, if anything, better than average--carefully designed, with a well-chosen data layout and no grossly wasteful code. But it's <b>clunky</b>. It's too general, the pattern of loops is ill-conceived, and destructive flow control leads to way too much copying. It needed more work, and got it.<br><br>
+
+<pre>&gt;++++++++&gt;&gt;&gt;&gt;&gt;++&gt;+&lt;[
+    &gt;&gt;+&gt;&gt;+[
+        -[-&gt;&gt;+&lt;[&lt;&lt;&lt;[&lt;&lt;]&lt;&lt;+&gt;&gt;&gt;&gt;[&gt;&gt;]+&gt;-]&lt;[&gt;+&lt;-]]
+        &lt;&lt;&lt;[&gt;&gt;&gt;++++&lt;&lt;&lt;-]&gt;&gt;[&gt;++&lt;-]&gt;&gt;[&lt;+&gt;-]
+        &lt;[&gt;+&lt;-[&lt;+&gt;-[-[&lt;-&lt;&lt;+&gt;&gt;&gt;-[&gt;-&lt;-[&lt;+&gt;-[-]]]]]]]+&lt;&lt;
+    ]&lt;+&lt;&lt;-[&gt;&gt;-&lt;&lt;[&lt;+&gt;-]]&lt;[&gt;+&lt;-]
+   &gt;&gt;&gt;[&lt;.[-]&lt;++++++++&gt;&gt;-]&lt;[&gt;+&lt;-]&gt;[&lt;++&gt;-]&gt;&gt;&gt;[&gt;&gt;]&lt;&lt;
+]</pre><br>
+<small><a href="index.html">back to "some brainfuck fluff"</a></small><br></td></tr></table>
+</body></html>

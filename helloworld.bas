@@ -1,0 +1,3 @@
+10 PRINT "HELLOW WORLD. . ."
+20 GOTO 10
+

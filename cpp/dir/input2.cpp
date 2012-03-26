@@ -1,0 +1,9 @@
+4 4
+LURD
+URDU
+LDUR
+RLDU
+3
+2 2
+1 3
+3 2

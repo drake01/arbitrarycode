@@ -1,0 +1,17 @@
+
+;<Program title>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+
+mvi a,43
+mvi b,34
+add b
+sta @4200
+
+hlt

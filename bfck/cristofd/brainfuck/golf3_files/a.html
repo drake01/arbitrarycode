@@ -1,0 +1,2180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html dir="ltr"><head>
+<BASE HREF="">
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="top" href="http://web.archive.org/web/20060519051501/http://kidsquid.com/phpBB2/index.php" title="esoforum.kidsquid.com Forum Index">
+<link rel="search" href="http://web.archive.org/web/20060519051501/http://kidsquid.com/phpBB2/search.php" title="Search">
+<link rel="help" href="http://web.archive.org/web/20060519051501/http://kidsquid.com/phpBB2/faq.php" title="FAQ">
+<link rel="author" href="http://web.archive.org/web/20060519051501/http://kidsquid.com/phpBB2/memberlist.php" title="Memberlist">
+<link rel="prev" href="http://web.archive.org/web/20060519051501/http://kidsquid.com/phpBB2/viewtopic.php?t=134&amp;view=previous" title="View previous topic">
+<link rel="next" href="http://web.archive.org/web/20060519051501/http://kidsquid.com/phpBB2/viewtopic.php?t=134&amp;view=next" title="View next topic">
+<link rel="up" href="http://web.archive.org/web/20060519051501/http://kidsquid.com/phpBB2/viewforum.php?f=3" title="Golf">
+<link rel="chapter forum" href="http://web.archive.org/web/20060519051501/http://kidsquid.com/phpBB2/viewforum.php?f=10" title="Esoteric languages">
+<link rel="chapter forum" href="http://web.archive.org/web/20060519051501/http://kidsquid.com/phpBB2/viewforum.php?f=7" title="Conventional languages">
+<link rel="chapter forum" href="http://web.archive.org/web/20060519051501/http://kidsquid.com/phpBB2/viewforum.php?f=5" title="Language invention">
+<link rel="chapter forum" href="http://web.archive.org/web/20060519051501/http://kidsquid.com/phpBB2/viewforum.php?f=9" title="Computation theory">
+<link rel="chapter forum" href="http://web.archive.org/web/20060519051501/http://kidsquid.com/phpBB2/viewforum.php?f=3" title="Golf">
+<link rel="chapter forum" href="http://web.archive.org/web/20060519051501/http://kidsquid.com/phpBB2/viewforum.php?f=1" title="Miscellaneous discussion">
+<link rel="chapter forum" href="http://web.archive.org/web/20060519051501/http://kidsquid.com/phpBB2/viewforum.php?f=6" title="Forum Administration"><title>esoforum.kidsquid.com :: View topic - Brainf***: Canonical non-context-free language (Nov 7-Dec 5)</title><!-- link rel="stylesheet" href="templates/subSilver/subSilver.css" type="text/css" -->
+
+
+
+<style type="text/css">
+<!--
+/*
+  The original subSilver Theme for phpBB version 2+
+  Created by subBlue design
+  http://www.subBlue.com
+
+  NOTE: These CSS definitions are stored within the main page body so that you can use the phpBB2
+  theme administration centre. When you have finalised your style you could cut the final CSS code
+  and place it in an external file, deleting this section to save bandwidth.
+*/
+
+/* General page style. The scroll bar colours only visible in IE5.5+ */
+body {
+	background-color: #E5E5E5;
+	scrollbar-face-color: #DEE3E7;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #DEE3E7;
+	scrollbar-3dlight-color: #D1D7DC;
+	scrollbar-arrow-color:  #006699;
+	scrollbar-track-color: #EFEFEF;
+	scrollbar-darkshadow-color: #98AAB1;
+}
+
+/* General font families for common tags */
+font,th,td,p { font-family: Verdana, Arial, Helvetica, sans-serif }
+a:link,a:active,a:visited { color : #006699; }
+a:hover		{ text-decoration: underline; color : #DD6900; }
+hr	{ height: 0px; border: solid #D1D7DC 0px; border-top-width: 1px;}
+
+/* This is the border line & background colour round the entire page */
+.bodyline	{ background-color: #FFFFFF; border: 1px #98AAB1 solid; }
+
+/* This is the outline round the main forum tables */
+.forumline	{ background-color: #FFFFFF; border: 2px #006699 solid; }
+
+/* Main table cell colours and backgrounds */
+td.row1	{ background-color: #EFEFEF; }
+td.row2	{ background-color: #DEE3E7; }
+td.row3	{ background-color: #D1D7DC; }
+
+/*
+  This is for the table cell above the Topics, Post & Last posts on the index.php page
+  By default this is the fading out gradiated silver background.
+  However, you could replace this with a bitmap specific for each forum
+*/
+td.rowpic {
+		background-color: #FFFFFF;
+		background-image: url(http://kidsquid.com/phpBB2/templates/subSilver/images/cellpic2.jpg);
+		background-repeat: repeat-y;
+}
+
+/* Header cells - the blue and silver gradient backgrounds */
+th	{
+	color: #FFA34F; font-size: 11px; font-weight : bold;
+	background-color: #006699; height: 25px;
+	background-image: url(http://kidsquid.com/phpBB2/templates/subSilver/images/cellpic3.gif);
+}
+
+td.cat,td.catHead,td.catSides,td.catLeft,td.catRight,td.catBottom {
+			background-image: url(http://kidsquid.com/phpBB2/templates/subSilver/images/cellpic1.gif);
+			background-color:#D1D7DC; border: #FFFFFF; border-style: solid; height: 28px;
+}
+
+/*
+  Setting additional nice inner borders for the main table cells.
+  The names indicate which sides the border will be on.
+  Don't worry if you don't understand this, just ignore it :-)
+*/
+td.cat,td.catHead,td.catBottom {
+	height: 29px;
+	border-width: 0px 0px 0px 0px;
+}
+th.thHead,th.thSides,th.thTop,th.thLeft,th.thRight,th.thBottom,th.thCornerL,th.thCornerR {
+	font-weight: bold; border: #FFFFFF; border-style: solid; height: 28px;
+}
+td.row3Right,td.spaceRow {
+	background-color: #D1D7DC; border: #FFFFFF; border-style: solid;
+}
+
+th.thHead,td.catHead { font-size: 12px; border-width: 1px 1px 0px 1px; }
+th.thSides,td.catSides,td.spaceRow	 { border-width: 0px 1px 0px 1px; }
+th.thRight,td.catRight,td.row3Right	 { border-width: 0px 1px 0px 0px; }
+th.thLeft,td.catLeft	  { border-width: 0px 0px 0px 1px; }
+th.thBottom,td.catBottom  { border-width: 0px 1px 1px 1px; }
+th.thTop	 { border-width: 1px 0px 0px 0px; }
+th.thCornerL { border-width: 1px 0px 0px 1px; }
+th.thCornerR { border-width: 1px 1px 0px 0px; }
+
+/* The largest text used in the index page title and toptic title etc. */
+.maintitle	{
+	font-weight: bold; font-size: 22px; font-family: "Trebuchet MS",Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; line-height : 120%; color : #000000;
+}
+
+/* General text */
+.gen { font-size : 12px; }
+.genmed { font-size : 11px; }
+.gensmall { font-size : 10px; }
+.gen,.genmed,.gensmall { color : #000000; }
+a.gen,a.genmed,a.gensmall { color: #006699; text-decoration: none; }
+a.gen:hover,a.genmed:hover,a.gensmall:hover	{ color: #DD6900; text-decoration: underline; }
+
+/* The register, login, search etc links at the top of the page */
+.mainmenu		{ font-size : 11px; color : #000000 }
+a.mainmenu		{ text-decoration: none; color : #006699;  }
+a.mainmenu:hover{ text-decoration: underline; color : #DD6900; }
+
+/* Forum category titles */
+.cattitle		{ font-weight: bold; font-size: 12px ; letter-spacing: 1px; color : #006699}
+a.cattitle		{ text-decoration: none; color : #006699; }
+a.cattitle:hover{ text-decoration: underline; }
+
+/* Forum title: Text and link to the forums used in: index.php */
+.forumlink		{ font-weight: bold; font-size: 12px; color : #006699; }
+a.forumlink 	{ text-decoration: none; color : #006699; }
+a.forumlink:hover{ text-decoration: underline; color : #DD6900; }
+
+/* Used for the navigation text, (Page 1,2,3 etc) and the navigation bar when in a forum */
+.nav			{ font-weight: bold; font-size: 11px; color : #000000;}
+a.nav			{ text-decoration: none; color : #006699; }
+a.nav:hover		{ text-decoration: underline; }
+
+/* titles for the topics: could specify viewed link colour too */
+.topictitle,h1,h2	{ font-weight: bold; font-size: 11px; color : #000000; }
+a.topictitle:link   { text-decoration: none; color : #006699; }
+a.topictitle:visited { text-decoration: none; color : #5493B4; }
+a.topictitle:hover	{ text-decoration: underline; color : #DD6900; }
+
+/* Name of poster in viewmsg.php and viewtopic.php and other places */
+.name			{ font-size : 11px; color : #000000;}
+
+/* Location, number of posts, post date etc */
+.postdetails		{ font-size : 10px; color : #000000; }
+
+/* The content of the posts (body of text) */
+.postbody { font-size : 12px; line-height: 18px}
+a.postlink:link	{ text-decoration: none; color : #006699 }
+a.postlink:visited { text-decoration: none; color : #5493B4; }
+a.postlink:hover { text-decoration: underline; color : #DD6900}
+
+/* Quote & Code blocks */
+.code {
+	font-family: Courier, 'Courier New', sans-serif; font-size: 11px; color: #006600;
+	background-color: #FAFAFA; border: #D1D7DC; border-style: solid;
+	border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px
+}
+
+.quote {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #444444; line-height: 125%;
+	background-color: #FAFAFA; border: #D1D7DC; border-style: solid;
+	border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px
+}
+
+/* Copyright and bottom info */
+.copyright		{ font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #444444; letter-spacing: -1px;}
+a.copyright		{ color: #444444; text-decoration: none;}
+a.copyright:hover { color: #000000; text-decoration: underline;}
+
+/* Form elements */
+input,textarea, select {
+	color : #000000;
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	border-color : #000000;
+}
+
+/* The text input fields background colour */
+input.post, textarea.post, select {
+	background-color : #FFFFFF;
+}
+
+input { text-indent : 2px; }
+
+/* The buttons used for bbCode styling in message post */
+input.button {
+	background-color : #EFEFEF;
+	color : #000000;
+	font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* The main submit button option */
+input.mainoption {
+	background-color : #FAFAFA;
+	font-weight : bold;
+}
+
+/* None-bold submit button */
+input.liteoption {
+	background-color : #FAFAFA;
+	font-weight : normal;
+}
+
+/* This is the line in the posting page which shows the rollover
+  help line. This is actually a text box, but if set to be the same
+  colour as the background no one will know ;)
+*/
+.helpline { background-color: #DEE3E7; border-style: none; }
+
+/* Import the fancy styles for IE only (NS4.x doesn't use the @import function) */
+@import url("http://kidsquid.com/phpBB2/templates/subSilver/formIE.css");
+-->
+</style></head>
+
+<body bgcolor="#e5e5e5" link="#006699" text="#000000" vlink="#5493b4">
+
+<a name="top"></a>
+
+<table align="center" border="0" cellpadding="10" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td class="bodyline"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td><a href="http://kidsquid.com/phpBB2/index.php"><img src="http://kidsquid.com/phpBB2/esoforum_files/logo_phpBB.gif" alt="esoforum.kidsquid.com Forum Index" border="0" vspace="1"></a></td>
+				<td align="center" valign="middle" width="100%"><span class="maintitle">esoforum.kidsquid.com</span><br><span class="gen">Esoteric programming forum<br>&nbsp; </span>
+				<table border="0" cellpadding="2" cellspacing="0">
+					<tbody><tr>
+						<td align="center" nowrap="nowrap" valign="top"><span class="mainmenu">&nbsp;<a href="http://kidsquid.com/phpBB2/faq.php" class="mainmenu"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_mini_faq.gif" alt="FAQ" border="0" height="13" hspace="3" width="12">FAQ</a></span><span class="mainmenu">&nbsp; &nbsp;<a href="http://kidsquid.com/phpBB2/search.php" class="mainmenu"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_mini_search.gif" alt="Search" border="0" height="13" hspace="3" width="12">Search</a>&nbsp; &nbsp;<a href="http://kidsquid.com/phpBB2/memberlist.php" class="mainmenu"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_mini_members.gif" alt="Memberlist" border="0" height="13" hspace="3" width="12">Memberlist</a>&nbsp; &nbsp;<a href="http://kidsquid.com/phpBB2/groupcp.php" class="mainmenu"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_mini_groups.gif" alt="Usergroups" border="0" height="13" hspace="3" width="12">Usergroups</a>&nbsp;
+						&nbsp;<a href="http://kidsquid.com/phpBB2/profile.php?mode=register" class="mainmenu"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_mini_register.gif" alt="Register" border="0" height="13" hspace="3" width="12">Register</a></span>&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td align="center" height="25" nowrap="nowrap" valign="top"><span class="mainmenu">&nbsp;<a href="http://kidsquid.com/phpBB2/profile.php?mode=editprofile" class="mainmenu"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_mini_profile.gif" alt="Profile" border="0" height="13" hspace="3" width="12">Profile</a>&nbsp; &nbsp;<a href="http://kidsquid.com/phpBB2/privmsg.php?folder=inbox" class="mainmenu"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_mini_message.gif" alt="Log in to check your private messages" border="0" height="13" hspace="3" width="12">Log in to check your private messages</a>&nbsp; &nbsp;<a href="http://kidsquid.com/phpBB2/login.php" class="mainmenu"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_mini_login.gif" alt="Log in" border="0" height="13" hspace="3" width="12">Log in</a>&nbsp;</span></td>
+					</tr>
+				</tbody></table></td>
+			</tr>
+		</tbody></table>
+
+		<br>
+
+
+<table border="0" cellpadding="2" cellspacing="2" width="100%">
+  <tbody><tr>
+	<td colspan="2" align="left" valign="bottom"><a class="maintitle" href="http://kidsquid.com/phpBB2/viewtopic.php?t=134&amp;start=0&amp;postdays=0&amp;postorder=asc&amp;highlight=">Brainf***: Canonical non-context-free language (Nov 7-Dec 5)</a><br>
+	  <span class="gensmall"><b></b><br>
+	  &nbsp; </span></td>
+  </tr>
+</tbody></table>
+
+<table border="0" cellpadding="2" cellspacing="2" width="100%">
+  <tbody><tr>
+	<td align="left" nowrap="nowrap" valign="bottom"><span class="nav"><a href="http://kidsquid.com/phpBB2/posting.php?mode=newtopic&amp;f=3"><img src="http://kidsquid.com/phpBB2/esoforum_files/post.gif" alt="Post new topic" align="middle" border="0"></a>&nbsp;&nbsp;&nbsp;<a href="http://kidsquid.com/phpBB2/posting.php?mode=reply&amp;t=134"><img src="http://kidsquid.com/phpBB2/esoforum_files/reply.gif" alt="Reply to topic" align="middle" border="0"></a></span></td>
+	<td align="left" valign="middle" width="100%"><span class="nav">&nbsp;&nbsp;&nbsp;<a href="http://kidsquid.com/phpBB2/index.php" class="nav">esoforum.kidsquid.com Forum Index</a>
+	  -&gt; <a href="http://kidsquid.com/phpBB2/viewforum.php?f=3" class="nav">Golf</a></span></td>
+  </tr>
+</tbody></table>
+
+<table class="forumline" border="0" cellpadding="3" cellspacing="1" width="100%">
+	<tbody><tr align="right">
+		<td class="catHead" colspan="2" height="28"><span class="nav"><a href="http://kidsquid.com/phpBB2/viewtopic.php?t=134&amp;view=previous" class="nav">View previous topic</a> :: <a href="http://kidsquid.com/phpBB2/viewtopic.php?t=134&amp;view=next" class="nav">View next topic</a> &nbsp;</span></td>
+	</tr>
+	
+	<tr>
+		<th class="thLeft" height="26" nowrap="nowrap" width="150">Author</th>
+		<th class="thRight" nowrap="nowrap">Message</th>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="387"></a><b>calamari</b></span><br><span class="postdetails">Site Admin<br><img src="http://kidsquid.com/phpBB2/esoforum_files/choke.jpg" alt="" border="0"><br><br>Joined: 21 Jan 2005<br>Posts: 161<br>Location: Tucson, Arizona</span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=387#387"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Sat Nov 05, 2005 2:44 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: Brainf***: Canonical non-context-free language (Nov 7-Dec 5)</span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=387"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody"><span style="font-style: italic;">If you notice any typos, ambiguities, or problems, please let me know.  Thanks a lot, and enjoy the competition.</span> <img src="http://kidsquid.com/phpBB2/esoforum_files/icon_biggrin.gif" alt="Very Happy" border="0">
+<br>
+
+<br>
+<span style="font-weight: bold;">Task</span>
+<br>
+Write a Brainf*** program that accepts the language:
+<br>
+
+<br>
+L := { a<sup>i</sup> b<sup>j</sup> c<sup>k</sup> : i = j = k }
+<br>
+
+<br>
+Where a, b, and c are the ASCII characters 'a', 'b', and 'c'.
+<br>
+
+<br>
+The language accepts the set of all input strings consisting of a
+sequence of a's, followed by a sequence of b's, followed by a sequence
+of c's, having the same number of a's, b's, and c's. All other strings
+are rejected. It is considered the canonical example of a
+non-context-free (stack based) language, meaning that it may only be
+computed by a machine equivalent in power to a Turing machine. Since
+BrainF*** is Turing complete, it should be up to the task.
+<br>
+
+<br>
+<span style="font-weight: bold;">Examples</span>
+<br>
+The string 'aaaabbbbcccc' is in the language L, as it is a<sup>4</sup>b<sup>4</sup>c<sup>4</sup>, so i = 4, j = 4, and k = 4, thus i = j = k.
+<br>
+
+<br>
+The string 'aaabccc' is not in the language L, as i = 3, j = 1, k = 3, and so i &#8800; j.
+<br>
+
+<br>The string 'bac' is not in the language L, despite i = j = k, as it
+is not a sequence of a's, followed by b's, followed by c's. Similarly,
+'abcabc' is not in the language L, as 'a' cannot follow 'c'.
+<br>
+
+<br>The input 'ab' is valid input, but is not in the language L, as j =
+1 and k = 0, so j &#8800; k. Any arrangement of a's b's and c's is valid
+input string, but not all strings are in the language L, as above.
+<br>
+
+<br>
+The empty string '' is in the language L, as i = j = k = 0.  
+<br>
+
+<br>
+<span style="font-weight: bold;">Input and Output</span>
+<br>The input may be assumed to consist only of the letters 'a', 'b',
+'c', and '\n' (newline character). Other input is undefined and will
+not be considered for the purposes of the contest. <br>
+
+<br>
+Input consists of a string of 'a', 'b', and 'c' characters (as given in
+the above examples), terminated by '\n' (the newline character,
+linefeed ASCII character 10, NOT the characters '\' 'n'). Every string,
+including the empty string, must be followed by the newline character. <br>
+
+<br>
+Once the '\n' newline character is detected, no further input may be
+read. It is not necessary to read all the input (for example, if a
+determination can be reached before the newline is encountered). <br>
+
+<br>
+The program output must be one of: 'accepted\n' (meaning that the
+string was found to be in the language L) or 'rejected\n' (the string
+was not in the language L), where '\n' is again the newline character.
+<br>
+
+<br>The input string may be of any length. Therefore, imposing an
+arbitrary limit, such as accepting a maximum of 255 a's, is unwise. It
+should be assumed that this will be tested with extremely long inputs. <br>
+
+<br>
+<span style="font-weight: bold;">Language details</span>
+<br>
+The interpreter used will have 8-bit memory cells. Memory will be
+unbounded to the right (within the limits of the machine it is being
+run on). Programs must not wrap cell values (either by executing '-' on
+a cell with the value 0 or '+' on a cell with the value 255). Programs
+must not wrap the memory array (by executing '&lt;' at cell 0). <br>
+
+<br>
+<span style="font-weight: bold;">Scoring</span>
+<br>
+The winning entry must first be correct.  If an entry does not conform to the above specification, it is disqualified.
+<br>
+
+<br>
+Ranking is then by the shortest stripped code length (only counting
+Brainf*** instructions). If two programs are tied in code length, the
+winner shall be the program that was submitted first.
+<br>
+
+<br>
+Multiple entries are allowed.  Entry corrections will require a new entry.  Do not modify old entries.
+<br>
+
+<br>
+<span style="font-weight: bold;">Reference interpreter and code stripper</span>
+<br>
+I have provided a compliant Brainf*** interpreter at <a href="http://kidsquid.com/programs/bf/bfgolf.tar.gz" target="_blank" class="postlink">http://kidsquid.com/programs/bf/bfgolf.tar.gz</a> or, if you prefer, <a href="http://kidsquid.com/programs/bf/bfgolf.zip" target="_blank" class="postlink">http://kidsquid.com/programs/bf/bfgolf.zip</a>.
+It requires an ANSI C compatible compiler. Also included is a program
+that strips a program of all non-Brainf*** characters. Please let me
+know if you run into any problems. <br>
+
+<br>
+<span style="font-weight: bold;">Contest deadline</span>
+<br>
+The contest will start Monday, November 7, and end Monday, December 5,
+11:59pm, and entries will be scored. Please do not post code until
+after the ending time. Contest entries should be posted to this thread
+in the form of an md5 hash. Please also include the stripped length of
+the program. The date and time of the forum will be considered the
+official date and time for the contest and contest entries. Once the
+contest has ended, entries will be matched against their MD5 hash. Any
+found to be different will be disqualified.
+<br>
+
+<br>
+<span style="font-weight: bold;">Prizes</span>
+<br>The contest winner will receive a free abacus by mail. It is a
+generic abacus with 9 rods. I reserve the right not to award the prize
+if there is only a single contest entry.
+<br>
+
+<br>
+Have fun!
+<br>
+calamari</span><span class="gensmall"><br><br>Last edited by calamari on Sat Nov 12, 2005 12:38 pm; edited 5 times in total</span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://kidsquid.com/phpBB2/profile.php?mode=viewprofile&amp;u=2"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://kidsquid.com/phpBB2/privmsg.php?mode=post&amp;u=2"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a> <a href="mailto:esoforum@kidsquid.com"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_email.gif" alt="Send e-mail" title="Send e-mail" border="0"></a> <a href="http://kidsquid.com/" target="_userwww"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_www.gif" alt="Visit poster's website" title="Visit poster's website" border="0"></a> <a href="aim:goim?screenname=killerkalamari&amp;message=Hello+Are+you+there?"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_aim.gif" alt="AIM Address" title="AIM Address" border="0"></a>  <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="388"></a><b>lvl</b></span><br><span class="postdetails"><br><br><br>Joined: 06 Nov 2005<br>Posts: 1<br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=388#388"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Sun Nov 06, 2005 1:59 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=388"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">you didn't define the ASCII value of '\n'. is it 10, or 13?
+<br>
+
+<br>
+Laurent</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://kidsquid.com/phpBB2/profile.php?mode=viewprofile&amp;u=8"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://kidsquid.com/phpBB2/privmsg.php?mode=post&amp;u=8"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>     <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="389"></a><b>ORBAT</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=389#389"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Sun Nov 06, 2005 2:03 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: newline</span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=389"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=389"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Isn't the "standard" interpretation supposed to be that 10 (LF) == \n?
+<br>
+
+<br>
+Like anyone adheres to standards in the esoteric world anyhow :)</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="390"></a><b>Keymaker</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=390#390"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Sun Nov 06, 2005 7:34 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=390"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=390"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Indeed, it's not defined, but I'd say it's <span style="font-weight: bold;">10</span>.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="391"></a><b>jix</b></span><br><span class="postdetails"><br><br><br>Joined: 05 Nov 2005<br>Posts: 1<br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=391#391"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Sun Nov 06, 2005 7:44 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=391"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">\n is newline
+<br>
+\r is carriage return
+<br>
+
+<br>
+ascii defines newline as 10 and carriage return as 13... where is the problem?</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://kidsquid.com/phpBB2/profile.php?mode=viewprofile&amp;u=7"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://kidsquid.com/phpBB2/privmsg.php?mode=post&amp;u=7"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a>     <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="392"></a><b>ORBAT</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=392#392"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Sun Nov 06, 2005 11:10 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=392"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=392"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Gotcha!
+<br>
+
+<br>
+At least in C \n does NOT equal <span style="font-style: italic;">LF</span>
+(10). It's implementation-specific, and when you're reading or writing
+a file in text mode, it translates to the implementation's native
+newline (CR for old Macs, CR+LF for Windozes, LF for UN*X). When you're
+using binary mode, it translates to LF.
+<br>
+
+<br>The problem here is that all versions of Windows use CR+LF as their
+newline character, so any BF interpreter that assumes 10 to be "\n",
+will be caught off guard by the extra 13 that comes around the corner.
+<br>
+
+<br>
+I love standards: there's so many of them</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="394"></a><b>calamari</b></span><br><span class="postdetails">Site Admin<br><img src="http://kidsquid.com/phpBB2/esoforum_files/choke.jpg" alt="" border="0"><br><br>Joined: 21 Jan 2005<br>Posts: 161<br>Location: Tucson, Arizona</span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=394#394"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Sun Nov 06, 2005 10:33 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=394"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Let's use '\n' = 10.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://kidsquid.com/phpBB2/profile.php?mode=viewprofile&amp;u=2"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://kidsquid.com/phpBB2/privmsg.php?mode=post&amp;u=2"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a> <a href="mailto:esoforum@kidsquid.com"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_email.gif" alt="Send e-mail" title="Send e-mail" border="0"></a> <a href="http://kidsquid.com/" target="_userwww"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_www.gif" alt="Visit poster's website" title="Visit poster's website" border="0"></a> <a href="aim:goim?screenname=killerkalamari&amp;message=Hello+Are+you+there?"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_aim.gif" alt="AIM Address" title="AIM Address" border="0"></a>  <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="395"></a><b>calamari</b></span><br><span class="postdetails">Site Admin<br><img src="http://kidsquid.com/phpBB2/esoforum_files/choke.jpg" alt="" border="0"><br><br>Joined: 21 Jan 2005<br>Posts: 161<br>Location: Tucson, Arizona</span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=395#395"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Sun Nov 06, 2005 11:14 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=395"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">I've uploaded the reference interpreter and BF stripper to <a href="http://kidsquid.com/programs/bf/bfgolf.tar.gz" target="_blank" class="postlink">http://kidsquid.com/programs/bf/bfgolf.tar.gz</a>.  Please let me know if you encounter any problems.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://kidsquid.com/phpBB2/profile.php?mode=viewprofile&amp;u=2"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://kidsquid.com/phpBB2/privmsg.php?mode=post&amp;u=2"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a> <a href="mailto:esoforum@kidsquid.com"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_email.gif" alt="Send e-mail" title="Send e-mail" border="0"></a> <a href="http://kidsquid.com/" target="_userwww"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_www.gif" alt="Visit poster's website" title="Visit poster's website" border="0"></a> <a href="aim:goim?screenname=killerkalamari&amp;message=Hello+Are+you+there?"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_aim.gif" alt="AIM Address" title="AIM Address" border="0"></a>  <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="397"></a><b>calamari</b></span><br><span class="postdetails">Site Admin<br><img src="http://kidsquid.com/phpBB2/esoforum_files/choke.jpg" alt="" border="0"><br><br>Joined: 21 Jan 2005<br>Posts: 161<br>Location: Tucson, Arizona</span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=397#397"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Mon Nov 07, 2005 12:29 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=397"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">I've changed the reference interpreter to ignore carriage returns.  This should hopefully work for both Linux and Windows. 
+<br>
+
+<br>
+I have also made a zip version of the archive available.
+<br>
+
+<br>
+<a href="http://kidsquid.com/programs/bf/bfgolf.tar.gz" target="_blank" class="postlink">http://kidsquid.com/programs/bf/bfgolf.tar.gz</a>
+<br>
+<a href="http://kidsquid.com/programs/bf/bfgolf.zip" target="_blank" class="postlink">http://kidsquid.com/programs/bf/bfgolf.zip</a></span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://kidsquid.com/phpBB2/profile.php?mode=viewprofile&amp;u=2"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://kidsquid.com/phpBB2/privmsg.php?mode=post&amp;u=2"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a> <a href="mailto:esoforum@kidsquid.com"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_email.gif" alt="Send e-mail" title="Send e-mail" border="0"></a> <a href="http://kidsquid.com/" target="_userwww"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_www.gif" alt="Visit poster's website" title="Visit poster's website" border="0"></a> <a href="aim:goim?screenname=killerkalamari&amp;message=Hello+Are+you+there?"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_aim.gif" alt="AIM Address" title="AIM Address" border="0"></a>  <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="403"></a><b>Keymaker</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=403#403"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Sat Nov 12, 2005 12:33 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: This ought to do the job..</span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=403"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=403"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Here's my first submission.
+<br>
+<span style="font-weight: bold;">
+<br>
+Keymaker
+<br>
+15f3841715a134387bc663687daf6167
+<br>
+
+<br>
+</span>
+<br>
+<span style="font-style: italic;">(Edit by calamari: entry was approximately 570 bytes, original timestamp before I edited was 12 Nov 2005 12:33 pm)</span></span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="404"></a><b>calamari</b></span><br><span class="postdetails">Site Admin<br><img src="http://kidsquid.com/phpBB2/esoforum_files/choke.jpg" alt="" border="0"><br><br>Joined: 21 Jan 2005<br>Posts: 161<br>Location: Tucson, Arizona</span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=404#404"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Sat Nov 12, 2005 12:44 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=404"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a>   </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">It
+seems that I forgot to request a length with entries. I've amended the
+rules... so any further entries will require a program length as well. <img src="http://kidsquid.com/phpBB2/esoforum_files/icon_biggrin.gif" alt="Very Happy" border="0"></span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle"><a href="http://kidsquid.com/phpBB2/profile.php?mode=viewprofile&amp;u=2"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_profile.gif" alt="View user's profile" title="View user's profile" border="0"></a> <a href="http://kidsquid.com/phpBB2/privmsg.php?mode=post&amp;u=2"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_pm.gif" alt="Send private message" title="Send private message" border="0"></a> <a href="mailto:esoforum@kidsquid.com"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_email.gif" alt="Send e-mail" title="Send e-mail" border="0"></a> <a href="http://kidsquid.com/" target="_userwww"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_www.gif" alt="Visit poster's website" title="Visit poster's website" border="0"></a> <a href="aim:goim?screenname=killerkalamari&amp;message=Hello+Are+you+there?"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_aim.gif" alt="AIM Address" title="AIM Address" border="0"></a>  <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="405"></a><b>Keymaker</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=405#405"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Tue Nov 22, 2005 1:43 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=405"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=405"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Here's my second entry. I finished this one days ago, but finally got myself posting it.
+<br>
+<span style="font-weight: bold;">
+<br>
+Keymaker
+<br>
+3792badda159e66d363aec0f4b7d52e1
+<br>
+402 bytes
+<br>
+</span></span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="406"></a><b>Bertram</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=406#406"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Fri Dec 02, 2005 7:41 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=406"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=406"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Here's my first entry - I've finally got around to code one :)
+<br>
+
+<br>
+<span style="font-weight: bold;">Bertram (int-e)</span>
+<br>
+<span style="font-weight: bold;">f1b04426325ad75f0d06872bdd3f4481</span>
+<br>
+<span style="font-weight: bold;">349 bytes</span></span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="407"></a><b>Keymaker</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=407#407"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Sat Dec 03, 2005 3:50 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: Aaaaaaargh!</span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=407"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=407"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">I just knew this would happen.. <img src="http://kidsquid.com/phpBB2/esoforum_files/icon_twisted.gif" alt="Twisted Evil" border="0"> Well, enjoy your abacus..</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="408"></a><b>Bertram</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=408#408"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Sat Dec 03, 2005 8:37 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=408"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=408"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Some hours of micro-optimization later ...
+<br>
+
+<br>
+<span style="font-weight: bold;">Bertram (int-e)</span>
+<br>
+<span style="font-weight: bold;">1aaa945c464dec3ac855434befa15a80</span>
+<br>
+<span style="font-weight: bold;">332 bytes</span></span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="409"></a><b>Keymaker</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=409#409"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Sun Dec 04, 2005 5:59 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: My third and my last.</span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=409"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=409"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">This
+entry isn't very big improvement to my previous entry; it's only two
+instructions smaller. Oh well, at least the amount of instructions in
+this one is a nice number. <img src="http://kidsquid.com/phpBB2/esoforum_files/icon_cool.gif" alt="Cool" border="0">
+<br>
+<span style="font-weight: bold;">
+<br>
+Keymaker
+<br>
+08eec49920ac38499f569c9c3feb0aae
+<br>
+400 bytes
+<br>
+</span></span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="410"></a><b>Bertram</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=410#410"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Sun Dec 04, 2005 6:03 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=410"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=410"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody"></span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>calamari wrote:</b></span></td>	</tr>	<tr>	  <td class="quote">I've uploaded the reference interpreter and BF stripper to <a href="http://kidsquid.com/programs/bf/bfgolf.tar.gz" target="_blank" class="postlink">http://kidsquid.com/programs/bf/bfgolf.tar.gz</a>.  Please let me know if you encounter any problems.</td>	</tr></tbody></table><span class="postbody">
+<br>
+
+<br>
+This will probably not cause problems, but the
+<br>
+</span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>Code:</b></span></td>	</tr>	<tr>	  <td class="code">realloc(mem, (maxmp + 1024) * sizeof(unsigned char))</td>	</tr></tbody></table><span class="postbody">
+<br>
+should be
+<br>
+</span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>Code:</b></span></td>	</tr>	<tr>	  <td class="code">realloc(mem, (maxmp + 1 + 1024) * sizeof(unsigned char))</td>	</tr></tbody></table><span class="postbody">
+<br>
+or maxmp should be one larger throughout the program - that'd be more C-like</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="411"></a><b>Daniel</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=411#411"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Mon Dec 05, 2005 4:35 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: Hello.</span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=411"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=411"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">I procrastinated as usual, but here's my first entry
+<br>
+
+<br>
+<span style="font-weight: bold;">Daniel Cristofani
+<br>
+266 bytes
+<br>
+d20b981fbed760f6ee25e8c0f577fda0</span></span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="412"></a><b>Guest</b></span><br><span class="postdetails"><br><br><br><br><br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=412#412"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Mon Dec 05, 2005 5:48 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: Re: Hello.</span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=412"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=412"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody"></span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>Daniel wrote:</b></span></td>	</tr>	<tr>	  <td class="quote"><span style="font-weight: bold;">266 bytes</span></td>	</tr></tbody></table><span class="postbody">
+<br>
+
+<br>
+Congratulations. I can't wait to see how you did it :)
+<br>
+
+<br>
+Bertram</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="413"></a><b>Keymaker</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=413#413"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Mon Dec 05, 2005 7:33 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: Nice job.</span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=413"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=413"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Woah, now there's some byte-magick! <img src="http://kidsquid.com/phpBB2/esoforum_files/icon_biggrin.gif" alt="Very Happy" border="0"> Can't wait either.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="414"></a><b>Guest</b></span><br><span class="postdetails"><br><br><br><br><br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=414#414"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Mon Dec 05, 2005 3:40 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=414"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=414"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">It's
+great to see so many entries.. I'm afraid I probably won't be able to
+personally enter before the deadline (I really wanted to). Too much
+going on. <br>
+
+<br>
+I will be able to write up testcases and judge the entries after finals
+week (so basically a couple weeks from now). Or, if I have time, I'll
+do it sooner <img src="http://kidsquid.com/phpBB2/esoforum_files/icon_smile.gif" alt="Smile" border="0">
+<br>
+
+<br>
+Good luck everyone!
+<br>
+
+<br>
+calamari
+<br>
+Edit: hmm why I am I not logged in.. ahh well, hehe</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="415"></a><b>Daniel</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=415#415"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Mon Dec 05, 2005 10:06 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=415"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=415"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Second
+entry. By the way, this problem actually doesn't need a Turing-complete
+language; a language with power equivalent to a linear bounded
+automaton will do.
+<br>
+
+<br>
+<span style="font-weight: bold;">Daniel Cristofani
+<br>
+263 bytes
+<br>
+9654d61a53a7d779253113425acd1c68</span></span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="416"></a><b>Daniel</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=416#416"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Tue Dec 06, 2005 12:11 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: Okay.</span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=416"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=416"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Since it's just past the deadline, here's the code for my second entry.
+<br>
+
+<br>
+<span style="font-weight: bold;">Daniel Cristofani
+<br>
+263 bytes</span>
+<br>+&gt;+&gt;&gt;+[,-[&gt;++++&lt;[[-&gt;]&lt;&lt;]&lt;[&gt;]&gt;]&gt;[-[&lt;&lt;&lt;+&gt;+&gt;+&gt;-]&lt;&lt;&lt;-[-[-[&lt;[-]&gt;-]]]+++&gt;[&lt;-&gt;-]&gt;[-[&gt;]+&gt;]&gt;&gt;&gt;[&gt;&gt;&gt;]+[&lt;&lt;&lt;]&lt;[-&lt;]&gt;+&lt;]&gt;]+&lt;+&lt;+[&gt;&gt;+&gt;]&lt;&lt;[&gt;+&gt;&gt;]&lt;&lt;[&lt;&lt;&lt;]+&lt;&lt;[&gt;&gt;+&gt;]&gt;&gt;[&gt;&gt;&gt;]&gt;+++++[&lt;++++&gt;&gt;++&lt;-]&lt;-[&lt;&lt;++++++&gt;+++++&gt;-]&lt;++&lt;&lt;-[-[-[&gt;&gt;.++..++.&lt;--.++&gt;&gt;]]]&gt;[.&gt;++++.+++++.-----.--.++&gt;&gt;]&lt;&lt;&lt;++.&gt;.-.&gt;&gt;&gt;.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="417"></a><b>Daniel</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=417#417"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Tue Dec 06, 2005 12:53 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: more formatted code</span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=417"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=417"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody"></span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>Code:</b></span></td>	</tr>	<tr>	  <td class="code">+&gt;+&gt;&gt;+[
+<br>
+&nbsp; &nbsp;
+,-[&gt;++++&lt;[[-&gt;]&lt;&lt;]&lt;[&gt;]&gt;]&gt;[&nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;mod 5
+cutdown
+<br>&nbsp; &nbsp; &nbsp; &nbsp;
+-[&lt;&lt;&lt;+&gt;+&gt;+&gt;-]&lt;&lt;&lt;-[-[-[&lt;[-]&gt;-]]]+++&gt;[&lt;-&gt;-]
+compare and prev=current
+<br>&nbsp; &nbsp; &nbsp; &nbsp;
+&gt;[-[&gt;]+&gt;]&gt;&gt;&gt;[&gt;&gt;&gt;]+[&lt;&lt;&lt;]&lt;[-&lt;]&gt;+&lt;&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;increment appropriate stack
+<br>
+&nbsp; &nbsp; ]&gt;
+<br>]+&lt;+&lt;+[&gt;&gt;+&gt;]&lt;&lt;[&gt;+&gt;&gt;]&lt;&lt;[&lt;&lt;&lt;]+&lt;&lt;[&gt;&gt;+&gt;]&gt;&gt;[&gt;&gt;&gt;]&nbsp;
+&nbsp; &nbsp; &nbsp;fuse stacks
+<br>
+&gt;+++++[&lt;++++&gt;&gt;++&lt;-]&lt;-[&lt;&lt;++++++&gt;+++++&gt;-]&lt;++&lt;&lt;&nbsp; &nbsp; &nbsp; setup for print
+<br>-[-[-[&gt;&gt;.++..++.&lt;--.++&gt;&gt;]]]&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;print
+"accep"
+<br>&gt;[.&gt;++++.+++++.-----.--.++&gt;&gt;]&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;print "rejec"
+<br>&lt;&lt;&lt;++.&gt;.-.&gt;&gt;&gt;.&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; print "ted\n"</td>	</tr></tbody></table><span class="postbody">
+<br>
+
+<br>
+And an explanation. My basic method was to keep count of the number of
+'a', 'b', and 'c' using three interspersed stacks of cells set to 1.
+Also a flag which starts with a value of 1, but is zorched if any input
+letter has a smaller ASCII value than the preceding one. This continues
+until a linefeed is read. I tried a variety of methods for cutting the
+ASCII values down to size, and for comparing each number with the
+previous one, but I didn't try all possible combinations and it didn't
+seem to change the total outcome by more than 15 bytes or so anyway.
+<br>
+
+<br>The method used in this submission uses a distorted mod-5 operator
+to cut the ASCII values down, resulting in a value of a=2, b=1, c=0;
+whereas the previous value is stored in the form a=1, b=2, c=3. Thus,
+the previous letter had a larger ASCII value if (prev+current) &gt; 3;
+this is a mildly counterintuitive comparison operation. The overall
+data layout is
+<br>flag prev x x x 0 c b a c b a c b a c b a ... where "x" are cells
+used during the process of reading the current value and comparing it
+with the previous.
+<br>
+
+<br>Once the linefeed is read, my original plan was to merge all three
+stacks into a single stack, and merge the flag with them; if the last
+cell of the combined stack has a value of 4, the string is accepted;
+otherwise, it is rejected. I ended up using a slight variant of that
+method, as it happens.
+<br>
+
+<br>
+Further questions or comments welcomed.
+<br>
+-Daniel Cristofani.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="418"></a><b>Keymaker</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=418#418"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Tue Dec 06, 2005 3:34 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=418"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=418"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Woah, very nice! :) I need to inspect it a bit more to understand it fully, though. Seems we have quite a different solutions.
+<br>
+
+<br>
+Here is my first entry, 574 instructions (yes, I'm embarassed):
+<br>+&gt;&gt;&gt;&gt;&gt;+&gt;+++&lt;&lt;,----------[-----&lt;&lt;+&gt;+++++++++[&gt;---------&lt;-]+&gt;[-&lt;-&gt;&gt;&gt;&gt;+&gt;+&lt;&lt;&lt;&lt;[[-]&lt;+&gt;&gt;&gt;&gt;-&gt;-&lt;&lt;&lt;&lt;]]&lt;[&lt;&lt;&lt;-&gt;&gt;&gt;-]&gt;]&lt;&lt;[&gt;&gt;+&lt;&lt;-]+&gt;&gt;[-[----&lt;+++++++++[&gt;---------&lt;-]&gt;[&lt;+&lt;&lt;+&gt;&gt;&gt;-]&lt;++&lt;[&gt;-&lt;-]&lt;[&gt;+&lt;-]+&gt;&gt;[-[-&lt;&lt;-&gt;&gt;[-&gt;+&lt;[-&lt;&lt;+&gt;&gt;&gt;-&lt;]]]]&lt;&lt;[-&lt;[-]&gt;&gt;&gt;&gt;[&lt;+&gt;-]&gt;&gt;[&gt;&gt;]&lt;&lt;[[-]+&lt;&lt;]&lt;[&gt;+&lt;-]&lt;&lt;]&gt;&gt;&gt;[-&gt;[&gt;&gt;]&lt;&lt;[-&lt;&lt;]&gt;&gt;+&lt;]&gt;[&gt;&gt;]+&gt;+&lt;[&lt;&lt;]&gt;],----------]&gt;&gt;[&gt;&gt;]&lt;&lt;[&gt;+&lt;[-[-[-&gt;[-]&lt;]]]&gt;[[-]&lt;&lt;&lt;[&lt;&lt;]&lt;&lt;&lt;&lt;[-]&gt;&gt;&gt;&gt;&gt;&gt;[&gt;&gt;]&gt;]&lt;&lt;&lt;]&lt;&lt;&lt;+&lt;[&gt;++++++++[&lt;+++++++++++&gt;-]&lt;---.++..++.+++++++++++.++++.---------------.-.[-]++++++++++.[-]]&gt;[+++++++++[&lt;+++++++++++&gt;-]&lt;++++.-------------.+++++.-----.--.+++++++++++++++++.---------------.-.[-]++++++++++.&gt;]
+<br>
+
+<br>
+Here is my second entry, 402 instructions:
+<br>
++&gt;&gt;&gt;&gt;&gt;+&gt;+++&lt;&lt;+[-[----&lt;+++++++++[&gt;---------&lt;-]&gt;[&lt;+&lt;&lt;+&gt;&gt;&gt;-]&lt;++&lt;[&gt;-&lt;-]&lt;[&gt;+&lt;-]+&gt;&gt;[-[-&lt;&lt;-&gt;&gt;[-&gt;+&lt;[[-]&lt;&lt;+&gt;&gt;&gt;-&lt;]]]]&lt;&lt;[-&lt;[-]&gt;&gt;&gt;&gt;&gt;&gt;[&gt;&gt;]&lt;&lt;[[-]+&lt;&lt;]&lt;&lt;&lt;]&gt;&gt;&gt;[-&gt;[&gt;&gt;]&lt;&lt;[-&lt;&lt;]&gt;&gt;+&lt;]&gt;[&gt;&gt;]+&gt;+&lt;[&lt;&lt;]&gt;],----------]&gt;&gt;[&gt;&gt;]&lt;&lt;[&gt;+&lt;[-[-[-&gt;-&lt;]]]&gt;[-&lt;&lt;&lt;[&lt;&lt;]&lt;&lt;&lt;&lt;[-]&gt;&gt;&gt;&gt;&gt;&gt;[&gt;&gt;]&gt;]&lt;&lt;[-]&lt;]&lt;&lt;[-]&lt;+&lt;[+++++++++++++++[&gt;++++++&gt;+++++++&lt;&lt;-]&gt;.++..++.&gt;.++++.&lt;.-.[-]&lt;]&gt;[+++++++++++++[&gt;+++++++&gt;++++++++&lt;&lt;-]&gt;&gt;++.&lt;+++.+++++.-----.--.&gt;++.&lt;++.-.&lt;]++++++++++.
+<br>
+
+<br>
+And here is the third, that is only two instructions shorter than the previous, thus 400 instructions:
+<br>
++&gt;&gt;&gt;&gt;&gt;+&gt;+++&lt;&lt;+[-[-&lt;++++++++++++[&gt;-------&lt;-]&gt;[&lt;+&lt;&lt;+&gt;&gt;&gt;-]&lt;++&lt;[&gt;-&lt;-]&lt;[&gt;+&lt;-]+&gt;&gt;[-[-&lt;&lt;-&gt;&gt;[-&gt;+&lt;[[-]&lt;&lt;+&gt;&gt;&gt;-&lt;]]]]&lt;&lt;[-&lt;[-]&gt;&gt;&gt;&gt;&gt;&gt;[&gt;&gt;]&lt;&lt;[[-]+&lt;&lt;]&lt;&lt;&lt;]&gt;&gt;&gt;[-&gt;[&gt;&gt;]&lt;&lt;[-&lt;&lt;]&gt;&gt;+&lt;]&gt;[&gt;&gt;]+&gt;+&lt;[&lt;&lt;]&gt;],----------]&gt;&gt;[&gt;&gt;]&lt;&lt;[&gt;+&lt;[-[-[-&gt;-&lt;]]]&gt;[-&lt;&lt;&lt;[&lt;&lt;]&lt;&lt;&lt;&lt;[-]&gt;&gt;&gt;&gt;&gt;&gt;[&gt;&gt;]&gt;]&lt;&lt;[-]&lt;]&lt;&lt;[-]&lt;+&lt;[+++++++++++++++[&gt;++++++&gt;+++++++&lt;&lt;-]&gt;.++..++.&gt;.++++.&lt;.-.[-]&lt;]&gt;[+++++++++++++[&gt;+++++++&gt;++++++++&lt;&lt;-]&gt;&gt;++.&lt;+++.+++++.-----.--.&gt;++.&lt;++.-.&lt;]++++++++++.
+<br>
+
+<br>
+It was a nice competition overall.
+<br>
+
+<br>
+Daniel, please post the picture of that abacus on your site when you receive it. :) Congratulations.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="419"></a><b>Bertram</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=419#419"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Tue Dec 06, 2005 4:49 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=419"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=419"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">First entry:
+<br>
++&gt;+&gt;&gt;+[-&gt;&gt;&gt;++++++++[&lt;+++++++++++&gt;-],----------]&lt;[-]&lt;+&lt;[&gt;-&lt;[[&lt;-&gt;-]+&lt;[-&gt;-&gt;+&lt;&lt;[-&gt;&gt;-&gt;+&lt;&lt;&lt;]]&lt;&lt;]&gt;&gt;&gt;&gt;&gt;[&gt;&gt;&gt;]&lt;[&gt;&gt;&gt;]+&lt;[&gt;&gt;&gt;]+&gt;&gt;[&lt;+&gt;-]&lt;[&lt;-&gt;[-]]&lt;[[[[&gt;&gt;&gt;]&lt;&lt;&lt;-&lt;&lt;&lt;[&lt;&lt;&lt;]+&lt;&lt;&lt;[&gt;&gt;&gt;-&lt;&lt;&lt;-]&gt;&gt;&gt;]&lt;&lt;[&gt;&gt;&gt;&gt;]&gt;&gt;&gt;[&gt;&gt;&gt;]&lt;]&gt;&gt;[&gt;]&gt;&gt;[&lt;+&gt;-]&lt;[&lt;+&gt;-]&lt;[&gt;&gt;]&lt;[&lt;&lt;&lt;]]]&gt;&gt;[-]&gt;[-]++&gt;[-]+++++++++++[&lt;&lt;&lt;&lt;+&gt;&gt;+++++++++&gt;++++++++++&gt;-]&lt;&lt;&lt;[&gt;--.++..++.&gt;.&gt;&gt;[-]]&lt;[&gt;&gt;&gt;++.--&lt;++.+++++.-----.--.++&gt;&gt;]&lt;++++.&lt;.-.&lt;&lt;-.
+<br>
+
+<br>
+Second entry:
+<br>
+&gt;+[-&gt;&gt;&gt;,&lt;++++++++++[&lt;+++++++++&gt;&gt;-&lt;-]&gt;]&lt;&lt;&lt;[[[&gt;-&lt;-]&gt;-[[&gt;]+[&lt;]&gt;-]+[&gt;]+&lt;[-&lt;]&lt;&lt;&lt;]+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;[&gt;&gt;&gt;]&lt;[&gt;&gt;&gt;]+&lt;[&gt;&gt;&gt;]+&gt;&gt;[&lt;+&gt;-]&lt;[&lt;-&gt;[-]]&lt;[[[[&gt;&gt;&gt;]&lt;&lt;&lt;-&lt;&lt;&lt;[&lt;&lt;&lt;]+&lt;&lt;&lt;[-&lt;]&gt;&gt;&gt;]&gt;-&lt;&lt;[&gt;&gt;&gt;]&gt;&gt;[&gt;&gt;&gt;]&gt;]&gt;[&gt;]&gt;&gt;[&lt;+&gt;-]&lt;[&lt;+&gt;-]&lt;[&gt;&gt;]&lt;[&lt;&lt;&lt;]]]&gt;&gt;[-]&gt;[-]++&gt;[-]+++++++++++[&lt;&lt;&lt;&lt;+&gt;&gt;+++++++++&gt;++++++++++&gt;-]&lt;&lt;&lt;[&gt;--.++..++.&gt;.&gt;&gt;[-]]&lt;[&gt;&gt;&gt;++.--&lt;++.+++++.-----.--.++&gt;&gt;]&lt;++++.&lt;.-.&lt;&lt;-.
+<br>
+
+<br>
+Somewhat more formatted:
+<br>
+</span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>Code:</b></span></td>	</tr>	<tr>	  <td class="code">&gt;+[-&gt;&gt;&gt;,&lt;++++++++++[&lt;+++++++++&gt;&gt;-&lt;-]&gt;]&lt;&lt;&lt;
+<br>
+Setup the data like this: (the ? are the characters read minus 11) 0 90 0 ? 90 0 ? :: *? 90
+<br>
+[ if not empty (if empty accept)
+<br>
+&nbsp;[[&gt;-&lt;-]&gt;-[[&gt;]+[&lt;]&gt;-]+[&gt;]+&lt;[-&lt;]&lt;&lt;&lt;]
+<br>
+&nbsp;encode the characters in a sort of unary code: *0 90 0 0 0 (: 0 0 1 / 0 1 0 / 1 0 0 :)
+<br>
+&nbsp;+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;[&gt;&gt;&gt;]&lt;[&gt;&gt;&gt;]+&lt;[&gt;&gt;&gt;]+&gt;&gt;[&lt;+&gt;-]&lt;[&lt;-&gt;[-]]&lt;
+<br>
+&nbsp;[ we get here if the input was in the language a*b*c*c
+<br>
+&nbsp; [
+<br>
+&nbsp; &nbsp;This is actually similar to Daniel's approach: move the 1s into each other
+<br>
+&nbsp; &nbsp;[[&gt;&gt;&gt;]&lt;&lt;&lt;-&lt;&lt;&lt;[&lt;&lt;&lt;]+&lt;&lt;&lt;[-&lt;]&gt;&gt;&gt;]
+<br>
+&nbsp; &nbsp;1st iteration: 0 0 90 *0 1 0 0 (: 1 0 1 / 0 1 0 :)
+<br>
+&nbsp; &nbsp;2nd iteration: 0 0 89 0 *0 1 0 (: 1 1 1 :)
+<br>
+&nbsp; &nbsp;&gt;-&lt;&lt;[&gt;&gt;&gt;]&gt;&gt;[&gt;&gt;&gt;]&gt;
+<br>
+&nbsp; ]
+<br>
+&nbsp; check if stacks merged cleanly
+<br>
+&nbsp; &gt;[&gt;]
+<br>
+&nbsp; &gt;&gt;[&lt;+&gt;-]&lt;[&lt;+&gt;-]&lt;
+<br>
+&nbsp; [&gt;&gt;]
+<br>
+&nbsp; check if merged stack length is divisible by 3
+<br>
+&nbsp; &lt;[&lt;&lt;&lt;]
+<br>
+&nbsp;]
+<br>
+]
+<br>
+print result
+<br>
+&gt;&gt;[-]&gt;[-]++&gt;
+<br>
+[-]+++++++++++[&lt;&lt;&lt;&lt;+&gt;&gt;+++++++++&gt;++++++++++&gt;-]
+<br>
+&lt;&lt;&lt;[&gt;--.++..++.&gt;.&gt;&gt;[-]]
+<br>
+&lt;[&gt;&gt;&gt;++.--&lt;++.+++++.-----.--.++&gt;&gt;]
+<br>
+&lt;++++.&lt;.-.&lt;&lt;-.</td>	</tr></tbody></table><span class="postbody">
+<br>
+
+<br>
+Interesting problem... and the mod 5 idea is great.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="420"></a><b>Daniel</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=420#420"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Tue Dec 06, 2005 11:13 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: You know...</span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=420"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=420"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Keymaker's
+algorithm was actually better than mine. And that makes me wonder if we
+should start a new custom: after each brainfuck contest, see if we can
+collaboratively find anything shorter than the winning solutions. At
+least, when the problem is hard enough that all submitted programs are
+likely to be suboptimal. Anyone want to work on improving this 252-byte
+program?
+<br>
+
+<br>
+</span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>Code:</b></span></td>	</tr>	<tr>	  <td class="code">&gt;&gt;&gt;&gt;&gt;+++&lt;&lt;&lt;&lt;+[
+<br>
+&nbsp; &nbsp; -[
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; [&lt;+&gt;&gt;+&lt;-]&gt;[[-&gt;]&lt;&lt;]&lt;[&gt;&gt;+&lt;]&gt;&gt;[&lt;+&gt;&gt;]
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;[[-]&gt;&gt;+[&gt;&gt;]+[[-]&lt;&lt;]&lt;]&lt;[&gt;]
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;[&gt;&gt;&gt;+&lt;&lt;&lt;-]&gt;&gt;&gt;&gt;&gt;&gt;[&gt;&gt;]+&gt;+&lt;[&lt;&lt;]&lt;&lt;&lt;
+<br>
+&nbsp; &nbsp; ],----------
+<br>
+]&gt;&gt;&gt;&gt;[+&gt;&gt;]&gt;&gt;[[&gt;&gt;]&gt;&gt;]
+<br>
++++++[&lt;++++&gt;&gt;++&lt;-]&lt;-[&lt;&lt;++++++&gt;+++++&gt;-]&lt;++&lt;&lt;
+<br>
+-[-[-[&gt;&gt;.++..++.&lt;--.++&gt;&gt;]]]
+<br>
+&gt;[.&gt;++++.+++++.-----.--.++&gt;&gt;]
+<br>
+&lt;&lt;&lt;++.&gt;.-.&gt;&gt;&gt;.</td>	</tr></tbody></table><span class="postbody">
+<br>
+
+<br>
+Also, if anyone is interested, here is my first submission, trivially different than my second:
+<br>+&gt;+&gt;&gt;&gt;+[,-[&lt;+++++[[-&gt;]&lt;&lt;]&lt;[&gt;]&gt;&gt;]&lt;[-[&lt;&lt;+&gt;+&gt;-]&lt;&lt;-[-[-[&lt;[-]&gt;-]]]+++&gt;[&lt;-&gt;&gt;+&lt;-]&gt;[-[&gt;]+&gt;]&gt;&gt;&gt;[&gt;&gt;&gt;]+[&lt;&lt;&lt;]&lt;[-&lt;]&gt;&gt;+&lt;]&gt;]+&gt;+&lt;&lt;+[&gt;&gt;+&gt;]&lt;&lt;[&gt;+&gt;&gt;]&lt;&lt;[&lt;&lt;&lt;]+&lt;&lt;[&gt;&gt;+&gt;]&gt;&gt;[&gt;&gt;&gt;]&gt;+++++[&lt;++++&gt;&gt;++&lt;-]&lt;-[&lt;&lt;++++++&gt;+++++&gt;-]&lt;++&lt;&lt;-[-[-[&gt;&gt;.++..++.&lt;--.++&gt;&gt;]]]&gt;[.&gt;++++.+++++.-----.--.++&gt;&gt;]q&lt;&lt;&lt;++.&gt;.-.&gt;&gt;&gt;.
+<br>
+or formatted:
+<br>
+</span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>Code:</b></span></td>	</tr>	<tr>	  <td class="code">+&gt;+&gt;&gt;&gt;+[
+<br>
+&nbsp; &nbsp; ,-[&lt;+++++[[-&gt;]&lt;&lt;]&lt;[&gt;]&gt;&gt;]&lt;[
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; -[&lt;&lt;+&gt;+&gt;-]&lt;&lt;-[-[-[&lt;[-]&gt;-]]]+++&gt;[&lt;-&gt;&gt;+&lt;-]
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &gt;[-[&gt;]+&gt;]&gt;&gt;&gt;[&gt;&gt;&gt;]+[&lt;&lt;&lt;]&lt;[-&lt;]&gt;&gt;+&lt;
+<br>
+&nbsp; &nbsp; ]&gt;
+<br>
+]+&gt;+&lt;&lt;+[&gt;&gt;+&gt;]&lt;&lt;[&gt;+&gt;&gt;]&lt;&lt;[&lt;&lt;&lt;]+&lt;&lt;[&gt;&gt;+&gt;]&gt;&gt;[&gt;&gt;&gt;]
+<br>
+&gt;+++++[&lt;++++&gt;&gt;++&lt;-]&lt;-[&lt;&lt;++++++&gt;+++++&gt;-]&lt;++&lt;&lt;
+<br>
+-[-[-[&gt;&gt;.++..++.&lt;--.++&gt;&gt;]]]
+<br>
+&gt;[.&gt;++++.+++++.-----.--.++&gt;&gt;]
+<br>
+&lt;&lt;&lt;++.&gt;.-.&gt;&gt;&gt;.</td>	</tr></tbody></table><span class="postbody">
+<br>
+
+<br>
+One more thing--should we call the contest we just finished Brainfuck Golf contest #3?
+<br>
+
+<br>
+-Daniel.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="421"></a><b>Keymaker</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=421#421"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Tue Dec 06, 2005 1:07 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=421"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=421"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody"></span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>Quote:</b></span></td>	</tr>	<tr>	  <td class="quote">Keymaker's
+algorithm was actually better than mine. And that makes me wonder if we
+should start a new custom: after each brainfuck contest, see if we can
+collaboratively find anything shorter than the winning solutions. At
+least, when the problem is hard enough that all submitted programs are
+likely to be suboptimal. Anyone want to work on improving this 252-byte
+program?</td>	</tr></tbody></table><span class="postbody">
+<br>
+Wow, thanks. <img src="http://kidsquid.com/phpBB2/esoforum_files/icon_cool.gif" alt="Cool" border="0"> The idea is good, although I couldn't get that any shorter.. 252 instructions, that's amazing size.
+<br>
+
+<br>
+As for Golf #3, yeah, I guess this could be called BF Golf #3, since
+<br>
+1. This uses the usual Golf implementation (8-bit non-wrapping cells, non-wrapping array)
+<br>
+2. The shortest code wins
+<br>
+3. Calamari has made this whole section called Golf, and described it "Esoteric language Golf games, in the spirit of Perl Golf"
+<br>
+
+<br>
+This was a great competition, thanks for everyone taking part.
+<br>
+
+<br>
+Now, the obvious question is, what's up next? <img src="http://kidsquid.com/phpBB2/esoforum_files/icon_wink.gif" alt="Wink" border="0"></span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="422"></a><b>Bertram</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=422#422"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Tue Dec 06, 2005 10:44 pm<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=422"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=422"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Here's a 250 byte version:
+<br>
+</span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>Code:</b></span></td>	</tr>	<tr>	  <td class="code">&gt;&gt;&gt;&gt;&gt;+++&lt;&lt;+&lt;&lt;+[
+<br>
+&nbsp; &nbsp; -[
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; [&lt;+&gt;&gt;+&lt;-]&gt;
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; [[-&gt;]&lt;&lt;]&lt;[&gt;&gt;+&lt;]&gt;&gt;[&lt;+&gt;&gt;]
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;[[-]&gt;&gt;+[&gt;&gt;]+[[-]&lt;&lt;]&lt;]&lt;[&gt;]
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;[&gt;&gt;&gt;+&lt;&lt;&lt;-]&gt; &gt;&gt;&gt;&gt;&gt;[&gt;&gt;]+&gt;+&lt;[&lt;&lt;]&lt;&lt;&lt;
+<br>
+&nbsp; &nbsp; ],----------
+<br>
+]+[+&gt;&gt;]&gt;&gt;[[&gt;&gt;]&gt;&gt;]
+<br>
++++++[&lt;++++&gt;&gt;++&lt;-]&lt;-[&lt;&lt;++++++&gt;+++++&gt;-]&lt;++&lt;&lt;
+<br>
+-[-[-[&gt;&gt;.++..++.&lt;--.++&gt;&gt;]]]
+<br>
+&gt;[.&gt;++++.+++++.-----.--.++&gt;&gt;]
+<br>
+&lt;&lt;&lt;++.&gt;.-.&gt;&gt;&gt;.</td>	</tr></tbody></table><span class="postbody">
+<br>
+
+<br>
+The algorithm is great and Daniel's code is quite impressive.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="423"></a><b>Daniel</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=423#423"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Wed Dec 07, 2005 2:11 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=423"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=423"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">That's excellent. Now how about if we also reconsider the linefeed detection method... 247 bytes
+<br>
+</span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>Code:</b></span></td>	</tr>	<tr>	  <td class="code">&gt;&gt;&gt;&gt;&gt;+++&lt;&lt;+[
+<br>
+&nbsp; &nbsp; &lt;&lt;,----------[
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; [&lt;+&gt;&gt;+&lt;-]&gt;
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; [[-&gt;]&lt;&lt;]&lt;[&gt;&gt;+&lt;]&gt;&gt;[&lt;+&gt;&gt;]
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;[[-]&gt;&gt;+[&gt;&gt;]+[[-]&lt;&lt;]&lt;]&lt;[&gt;]
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;[&gt;&gt;&gt;+&lt;&lt;&lt;-]&gt;&gt;&gt;&gt;&gt;&gt;[&gt;&gt;]+&gt;+&lt;[&lt;&lt;]
+<br>
+&nbsp; &nbsp; ]&lt;
+<br>
+]&gt;+[+&gt;&gt;]&gt;&gt;[[&gt;&gt;]&gt;&gt;]
+<br>
++++++[&lt;++++&gt;&gt;++&lt;-]&lt;-[&lt;&lt;++++++&gt;+++++&gt;-]&lt;++&lt;&lt;
+<br>
+-[-[-[&gt;&gt;.++..++.&lt;--.++&gt;&gt;]]]
+<br>
+&gt;[.&gt;++++.+++++.-----.--.++&gt;&gt;]
+<br>
+&lt;&lt;&lt;++.&gt;.-.&gt;&gt;&gt;.</td>	</tr></tbody></table><span class="postbody">
+<br>
+
+<br>
+(Another thing, notice that the &lt;[&gt;] at the end of the end of the
+fifth line can be moved to the beginning of that line without changing
+the outcome...that should be true of any of these recent variants. Or
+for that matter, it can be wrapped around the fifth line:
+<br>
+</span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>Code:</b></span></td>	</tr>	<tr>	  <td class="code">&nbsp;&lt;[[[-]&gt;&gt;+[&gt;&gt;]+[[-]&lt;&lt;]&lt;]&gt;]
+<br>
+&lt;&lt;[&gt;&gt;&gt;+&lt;&lt;&lt;-]&gt;&gt;&gt;&gt;&gt;&gt;[&gt;&gt;]+&gt;+&lt;[&lt;&lt;]</td>	</tr></tbody></table><span class="postbody">
+<br>
+
+<br>
+-Daniel.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="424"></a><b>Daniel</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=424#424"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Fri Dec 09, 2005 12:10 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=424"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=424"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Dunno why I didn't spot this before:
+<br>
+</span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>Code:</b></span></td>	</tr>	<tr>	  <td class="code">&gt;&gt;&gt;&gt;&gt;+++&lt;&lt;+[
+<br>
+&nbsp; &nbsp; &lt;&lt;,----------[
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; [&lt;+&gt;&gt;+&lt;-]&gt;[[-&gt;]&lt;&lt;]&lt;[&gt;&gt;+&lt;]&gt;&gt;[&lt;+&gt;&gt;]
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;[[-]&gt;&gt;+[&gt;&gt;]+[[-]&lt;&lt;]&lt;]&lt;[&gt;]
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &lt;[&gt;&gt;&gt;+&lt;&lt;&lt;-]&gt;&gt;&gt;&gt;&gt;&gt; look [&gt;] here +&gt;+&lt;[&lt;&lt;]
+<br>
+&nbsp; &nbsp; ]&lt;
+<br>
+]&gt;+[+&gt;&gt;]&gt;&gt;[[&gt;&gt;]&gt;&gt;]
+<br>
++++++[&lt;++++&gt;&gt;++&lt;-]&lt;-[&lt;&lt;++++++&gt;+++++&gt;-]&lt;++&lt;&lt;
+<br>
+-[-[-[&gt;&gt;.++..++.&lt;--.++&gt;&gt;]]]
+<br>
+&gt;[.&gt;++++.+++++.-----.--.++&gt;&gt;]
+<br>
+&lt;&lt;&lt;++.&gt;.-.&gt;&gt;&gt;.</td>	</tr></tbody></table><span class="postbody">
+<br>
+
+<br>I always feel bad when one of my programs can be improved purely by
+deletion. It's happened five or ten times I think. 246 bytes.
+<br>
+
+<br>
+<span style="font-weight: bold;">New question.</span> This is based on
+an idea of Keymaker's, and I'm interested to see other people try it.
+How short a program can output its own instruction count in bytes as a
+decimal number, followed by a linefeed? This is too small a contest to
+count as Golf. 31 is possible; is 30?</span><span class="gensmall"><br><br>Last edited by Daniel on Fri Dec 09, 2005 4:17 am; edited 1 time in total</span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="425"></a><b>Keymaker</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=425#425"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Fri Dec 09, 2005 1:58 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=425"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=425"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Hehe, yeah, that has happened to me sometimes too. <img src="http://kidsquid.com/phpBB2/esoforum_files/icon_biggrin.gif" alt="Very Happy" border="0"> Another byte out; excellent!
+<br>
+
+<br>
+About Daniel's question; yeah, it'd be very interesting to see. Personally I've got to 32 bytes;
+<br>
+<a href="http://bf-hacks.org/hacks/selfsize.b" target="_blank">http://bf-hacks.org/hacks/selfsize.b</a></span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="top" width="150"><span class="name"><a name="426"></a><b>Keymaker</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row1" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=426#426"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Fri Dec 09, 2005 6:18 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: </span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=426"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=426"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">I just got to 31 too.
+<br>
+</span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>Code:</b></span></td>	</tr>	<tr>	  <td class="code">++++++++++[&gt;+++++&gt;+&lt;&lt;-]&gt;+.--.&gt;.</td>	</tr></tbody></table><span class="postbody">
+<br>
+I'll need to update my site later..</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row1" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row1" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="top" width="150"><span class="name"><a name="427"></a><b>Keymaker</b></span><br><span class="postdetails">Guest<br><br><br><br><br></span><br></td>
+		<td class="row2" height="28" valign="top" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr>
+				<td width="100%"><a href="http://kidsquid.com/phpBB2/viewtopic.php?p=427#427"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_minipost.gif" alt="Post" title="Post" border="0" height="9" width="12"></a><span class="postdetails">Posted: Fri Dec 09, 2005 7:06 am<span class="gen">&nbsp;</span>&nbsp; &nbsp;Post subject: Hmmm..</span></td>
+				<td nowrap="nowrap" valign="top"><a href="http://kidsquid.com/phpBB2/posting.php?mode=quote&amp;p=427"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_quote.gif" alt="Reply with quote" title="Reply with quote" border="0"></a> <a href="http://kidsquid.com/phpBB2/posting.php?mode=editpost&amp;p=427"><img src="http://kidsquid.com/phpBB2/esoforum_files/icon_edit.gif" alt="Edit/Delete this post" title="Edit/Delete this post" border="0"></a>  </td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span class="postbody">Not sure if it's possible to get it any shorter than 31 bytes in a non-wrapping implementation. <img src="http://kidsquid.com/phpBB2/esoforum_files/icon_cry.gif" alt="Crying or Very sad" border="0"> At least I haven't succeeded in it yet, although that doesn't mean anything. <img src="http://kidsquid.com/phpBB2/esoforum_files/icon_biggrin.gif" alt="Very Happy" border="0">
+<br>
+
+<br>
+However, with wrapping 8-bit cells it's possible to get it down to 30 bytes;
+<br>
+</span><table align="center" border="0" cellpadding="3" cellspacing="1" width="90%"><tbody><tr> 	  <td><span class="genmed"><b>Code:</b></span></td>	</tr>	<tr>	  <td class="code">&gt;-[-----&lt;+&gt;]++++++++++&lt;.---.&gt;.</td>	</tr></tbody></table><span class="postbody">
+<br>
+Haven't tested that program since I don't have a wrapping interpreter, but I hope it'll work.</span><span class="gensmall"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="row2" align="left" valign="middle" width="150"><span class="nav"><a href="http://kidsquid.com/phpBB2/#top" class="nav">Back to top</a></span></td>
+		<td class="row2" height="28" nowrap="nowrap" valign="bottom" width="100%"><table border="0" cellpadding="0" cellspacing="0" height="18" width="18">
+			<tbody><tr>
+				<td nowrap="nowrap" valign="middle">      <script language="JavaScript" type="text/javascript"><!--
+
+	if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+		document.write(' ');
+	else
+		document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script></td><td>&nbsp;</td><td nowrap="nowrap" valign="top"><div style="position: relative;"><div style="position: absolute;"></div><div style="position: absolute; left: 3px; top: -1px;"></div></div><noscript></noscript></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+	<tr>
+		<td class="spaceRow" colspan="2" height="1"><img src="http://kidsquid.com/phpBB2/esoforum_files/spacer.gif" alt="" height="1" width="1"></td>
+	</tr>
+	<tr align="center">
+		<td class="catBottom" colspan="2" height="28"><table border="0" cellpadding="0" cellspacing="0">
+			<tbody><tr><form method="post" action="http://kidsquid.com/phpBB2/viewtopic.php?t=134&amp;start=0"></form>
+				<td align="center"><span class="gensmall">Display posts from previous: <select name="postdays"><option value="0" selected="selected">All Posts</option><option value="1">1 Day</option><option value="7">7 Days</option><option value="14">2 Weeks</option><option value="30">1 Month</option><option value="90">3 Months</option><option value="180">6 Months</option><option value="364">1 Year</option></select>&nbsp;<select name="postorder"><option value="asc" selected="selected">Oldest First</option><option value="desc">Newest First</option></select>&nbsp;<input value="Go" class="liteoption" name="submit" type="submit"></span></td>
+			</tr>
+		</tbody></table></td>
+	</tr>
+</tbody></table>
+
+<table align="center" border="0" cellpadding="2" cellspacing="2" width="100%">
+  <tbody><tr>
+	<td align="left" nowrap="nowrap" valign="middle"><span class="nav"><a href="http://kidsquid.com/phpBB2/posting.php?mode=newtopic&amp;f=3"><img src="http://kidsquid.com/phpBB2/esoforum_files/post.gif" alt="Post new topic" align="middle" border="0"></a>&nbsp;&nbsp;&nbsp;<a href="http://kidsquid.com/phpBB2/posting.php?mode=reply&amp;t=134"><img src="http://kidsquid.com/phpBB2/esoforum_files/reply.gif" alt="Reply to topic" align="middle" border="0"></a></span></td>
+	<td align="left" valign="middle" width="100%"><span class="nav">&nbsp;&nbsp;&nbsp;<a href="http://kidsquid.com/phpBB2/index.php" class="nav">esoforum.kidsquid.com Forum Index</a>
+	  -&gt; <a href="http://kidsquid.com/phpBB2/viewforum.php?f=3" class="nav">Golf</a></span></td>
+	<td align="right" nowrap="nowrap" valign="top"><span class="gensmall">All times are GMT - 7 Hours</span><br><span class="nav"></span>
+	  </td>
+  </tr>
+  <tr>
+	<td colspan="3" align="left"><span class="nav">Page <b>1</b> of <b>1</b></span></td>
+  </tr>
+</tbody></table>
+
+<table align="center" border="0" cellspacing="2" width="100%">
+  <tbody><tr>
+	<td align="left" nowrap="nowrap" valign="top" width="40%"><span class="gensmall"></span><br>
+	  &nbsp;<br>
+	  </td>
+	<td align="right" nowrap="nowrap" valign="top">
+<form method="get" name="jumpbox" action="http://kidsquid.com/phpBB2/viewforum.php" onsubmit="if(document.jumpbox.f.value == -1){return false;}"><table border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr>
+		<td nowrap="nowrap"><span class="gensmall">Jump to:&nbsp;<select name="f" onchange="if(this.options[this.selectedIndex].value != -1){ forms['jumpbox'].submit() }"><option value="-1">Select a forum</option><option value="-1">&nbsp;</option><option value="-1">Esoteric Languages</option><option value="-1">----------------</option><option value="10">Esoteric languages</option><option value="7">Conventional languages</option><option value="5">Language invention</option><option value="9">Computation theory</option><option value="-1">&nbsp;</option><option value="-1">Community</option><option value="-1">----------------</option><option value="3" selected="selected">Golf</option><option value="1">Miscellaneous discussion</option><option value="6">Forum Administration</option></select><input name="sid" value="e65acbff51a9e78ca1a7c6c1150c868f" type="hidden">&nbsp;<input value="Go" class="liteoption" type="submit"></span></td>
+	</tr>
+</tbody></table></form>
+
+<span class="gensmall">You <b>can</b> post new topics in this forum<br>You <b>can</b> reply to topics in this forum<br>You <b>can</b> edit your posts in this forum<br>You <b>cannot</b> delete your posts in this forum<br>You <b>cannot</b> vote in polls in this forum<br></span></td>
+  </tr>
+</tbody></table>
+
+
+<div align="center"><span class="copyright"><br><br>
+<!--
+	We request you retain the full copyright notice below including the link to www.phpbb.com.
+	This not only gives respect to the large amount of time given freely by the developers
+	but also helps build interest, traffic and use of phpBB 2.0. If you cannot (for good
+	reason) retain the full copyright we request you at least leave in place the
+	Powered by phpBB 2.0.11 line, with phpBB linked to www.phpbb.com. If you refuse
+	to include even this then support on our forums may be affected.
+
+	The phpBB Group : 2002
+// -->
+Powered by <a href="http://www.phpbb.com/" target="_phpbb" class="copyright">phpBB</a> 2.0.11 © 2001, 2002 phpBB Group<br></span></div>
+		</td>
+	</tr>
+</tbody></table>
+
+</body>
+<!-- SOME LINK HREF'S ON THIS PAGE HAVE BEEN REWRITTEN BY THE WAYBACK MACHINE
+OF THE INTERNET ARCHIVE IN ORDER TO PRESERVE THE TEMPORAL INTEGRITY OF THE SESSION. -->
+
+
+<SCRIPT language="Javascript">
+<!--
+
+// FILE ARCHIVED ON 20060519051501 AND RETRIEVED FROM THE
+// INTERNET ARCHIVE ON 20070922094222.
+// JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+// ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+// SECTION 108(a)(3)).
+
+   var sWayBackCGI = "http://web.archive.org/web/20060519051501/";
+
+   function xResolveUrl(url) {
+      var image = new Image();
+      image.src = url;
+      return image.src;
+   }
+   function xLateUrl(aCollection, sProp) {
+      var i = 0;
+      for(i = 0; i < aCollection.length; i++) {
+         if (typeof(aCollection[i][sProp]) == "string") { 
+          if (aCollection[i][sProp].indexOf("mailto:") == -1 &&
+             aCollection[i][sProp].indexOf("javascript:") == -1) {
+            if(aCollection[i][sProp].indexOf("http") == 0) {
+                aCollection[i][sProp] = sWayBackCGI + aCollection[i][sProp];
+            } else {
+                aCollection[i][sProp] = sWayBackCGI + xResolveUrl(aCollection[i][sProp]);
+            }
+         }
+         }
+      }
+   }
+
+   xLateUrl(document.getElementsByTagName("IMG"),"src");
+   xLateUrl(document.getElementsByTagName("A"),"href");
+   xLateUrl(document.getElementsByTagName("AREA"),"href");
+   xLateUrl(document.getElementsByTagName("OBJECT"),"codebase");
+   xLateUrl(document.getElementsByTagName("OBJECT"),"data");
+   xLateUrl(document.getElementsByTagName("APPLET"),"codebase");
+   xLateUrl(document.getElementsByTagName("APPLET"),"archive");
+   xLateUrl(document.getElementsByTagName("EMBED"),"src");
+   xLateUrl(document.getElementsByTagName("BODY"),"background");
+   var forms = document.getElementsByTagName("FORM");
+   if (forms) {
+       var j = 0;
+       for (j = 0; j < forms.length; j++) {
+              f = forms[j];
+              if (typeof(f.action)  == "string") {
+                 if(typeof(f.method)  == "string") {
+                     if(typeof(f.method) != "post") {
+                        f.action = sWayBackCGI + f.action;
+                     }
+                  }
+              }
+        }
+    }
+
+
+//-->
+</SCRIPT>
+
+</html>

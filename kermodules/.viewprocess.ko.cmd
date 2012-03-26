@@ -1,0 +1,1 @@
+cmd_/media/shrug/Documents/CODEITALL/kermodules/viewprocess.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.0.0-16-generic/scripts/module-common.lds --build-id  -o /media/shrug/Documents/CODEITALL/kermodules/viewprocess.ko /media/shrug/Documents/CODEITALL/kermodules/viewprocess.o /media/shrug/Documents/CODEITALL/kermodules/viewprocess.mod.o

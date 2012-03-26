@@ -1,0 +1,865 @@
+IAENG International Journal of Applied Mathematics, 40:1, IJAM_40_1_01
+______________________________________________________________________________________
+
+The Exact Number of Nonnegative Integer
+Solutions for a Linear Diophantine Inequality
+Rahim Mahmoudvand1 , Hossein Hassani2 , Abbas Farzaneh3 , Gareth Howell4
+Abstract—In this paper, we present a simple and
+fast method for counting the number of nonnegative
+integer solutions to the equality a1 x1 +a2 x2 +. . .+ar xr =
+n where a1 , a2 , ..., ar and n are positive integers. As an
+application, we use the method for ﬁnding the number
+of solutions of a Diophantine inequality.
+Keywords: Counting, Nonnegative integer solutions,
+Diophantine inequality.
+
+1
+
+Introduction
+
+Counting techniques play an important role in computing probabilities in random experiments of throwing dice,
+or classical occupancy problems. As a result, they have
+come to form a major part of the mathematics curriculum
+in many statistical publications. First we will consider
+some important applications of counting techniques.
+Ross [3] showed that the number of ways for placing n
+identical objects into the r distinct cells is equivalent to
+the number of nonnegative integer solutions to the equation
+x1 + x2 + . . . + xr = n (with xi ≥ 0, i = 1, . . . , r). (1)
+He also showed that the number of positive integers solutions of (1) is n−1 . The number of nonnegative integer
+r−1
+solutions of (1), subject to the constraint xi ≥ bi for
+i = 1, . . . , r is n+r−(b1 +b2 +...+br )−1 . Letting xi = yi + bi
+r−1
+for each i yields the equation
+y1 + . . . + yr = n − (b1 + b2 + . . . + br ),
+
+(2)
+
+to be solved in nonnegative integers. The number of such
+solutions where xi ≤ bi (i = 1, . . . , r) can be obtained using the inclusion/exclusion principle (see, for example,
+Rosen et al. [1]). For the latter situation, Murty [4] obtained a simple method of counting the favoured number
+∗1 Rahim Mahmoudvand:
+Group of Statistics, University
+of Payame Noor, Toyserkan, Iran, E-mail:
+r mahmodvand@yahoo.com;
+2 Hossein Hassani: Centre for Optimisation and Its Applications,
+School of Mathematics, Cardiﬀ University, UK, CF24 4AG, Telephone: +44 (0) 7703367456 Fax: +44 (0) 29 2087 4199, E-mail:
+HassaniH@cf.ac.uk;
+3 Abbas Farzaneh: Group of Computer, Islamic Azad University ,
+Toyserkan, Iran, E-mail: farzaneh.comp@gmail.com;
+4 Gareth Howell: Statistics Group, Cardiﬀ University , UK, CF24
+4AG, E-mail: HowellGL@cf.ac.uk.
+
+∗
+
+of solutions. One generalization of (1) is the number of
+nonnegative integer solutions of the following equation,
+a1 x1 + a2 x2 + . . . + ar xr = n.
+
+(3)
+
+Equation (3) is well-known as a Linear Diophantine
+Equation. As is discussed above for the simple case, it is
+possible to obtain the number solutions of equation (1)
+with some bounds on xi ’s from (1) without any bounds
+on xi ’s. It has been shown that the number solutions of
+(3) by some bounds on xi ’s can be expressed as a function of the number solutions of (3) without any bounds
+on xi ’s (Eisenbeis et al. [5]). Therefore, it is enough to
+restrict our eﬀort to determine the number solutions of
+(3) without any bounds on xi ’s. Given positive integers
+a1 , a2 , . . . , ar that are relatively prime, it is well-known
+that for all suﬃciently large n the equation (3) has a solution with nonnegative integers xi (Tripathi [2]). The
+generating function of equation (3) has the form
+ϕ(t) = [(1 − ta1 )(1 − ta2 ) . . . (1 − tar )]−1 ,
+and the number of non-negative integer solutions J(n) of
+equation (2) is given by the formula:
+J(n) =
+
+1 n
+ϕ (0).
+n!
+
+(4)
+
+Calculation of J(n) is diﬃcult in most situations. Antimirov and Matvejevs, in [6] have discussed several possible methods methods for its calculation. Eisenbeis et
+al.(1992) [5] presented fast methods for computing the
+exact or approximate number of solutions. In summary,
+there are two main problem for ﬁnding the number of
+nonnegative integer solution solutions of (3); the present
+methods, owing to the diﬃculty of the problem, are complicated, time consuming, and encounter diﬃculties when
+one wishes to extract a list of such solutions. These issues motivated us to obtain a simple method for ﬁnding
+the number of nonnegative integer solutions of (3) and
+provide a list of the obtained solutions.
+
+2
+
+New Method
+
+Among the two problems considered, i.e., computing the
+number solutions and generating the solutions, the ﬁrst
+one is by far the most complex. Therefore, it is vital
+
+(Advance online publication: 1 February 2010)
+
+IAENG International Journal of Applied Mathematics, 40:1, IJAM_40_1_01
+______________________________________________________________________________________
+
+to simplify the problem as much as possible in order to
+obtain eﬃcient computation. Let us ﬁrst consider ai = 1
+for i = 2, ..., r in (3). In this case, we must ﬁnd the
+number of nonnegative integer solutions for
+
+s(a1 , . . . , ar ; n) :=
+[n/a1 ] [(n−a1 w1 )/a2 ] [(n−a1 w1 −...−ar−2 wr−2 )/ar−1 ]
+
+...
+a1 x1 + x2 + . . . + xr = n.
+
+w1 =0
+
+(5)
+
+I(ar ; w1 , . . . , wr−1 )
+
+w2 =0
+
+wr−1 =0
+
+(11)
+where
+
+For solving (5), we can give the possible values of x1 and
+reform (5) to form (1). Therefore,
+[n/a1 ]
+w1 =0
+
+n − a1 w1 + r − 2
+r−2
+
+(6)
+
+is the number of nonnegative integer solutions for equation (5), where [u] is the integer part of u and r is a
+positive integer and r > 2. If r = 2 we must use
+[n/a1 ]
+
+Note also that if ai = 1 for all i, then s(a1 , . . . , ar ; n) is
+equal to n+r−1 , since
+r−1
+
+n
+
+n
+
+lutions, where
+
+...
+w1 =0 w2 =0
+n n−w1
+
+I(a2 , w1 ) =
+
+1
+0
+
+a2 |n − a1 w1
+otherwise
+
+=
+(7)
+
+w1 =0 w2 =0
+
+Now
+n−m
+k=0
+
+(8)
+
+For solving (8), we can give the possible values of x1 , x2
+and reform (8) to form (1). Therefore,
+
+[n/a1 ] [(n−a1 w1 )/a2 ]
+w1 =0
+
+w2 =0
+
+n − a1 w1 − a2 w2 + r − 3
+r−3
+
+[n/a1 ] [(n−a1 w1 )/a2 ]
+
+I(a3 , w1 , w2 ) as the number of
+w1 =0
+
+w1 =0
+
+nonnegative integer solutions, where
+
+I(a3 , w1 , w2 ) =
+
+1 a3 |n − a1 w1 − a2 w2
+0
+otherwise
+
+wr−2 =0
+
+3
+
+equality is obtained
+m+k
+n+1
+=
+.
+m
+m+1
+
+1 + wr−2
+.
+1
+
+(10)
+
+using
+
+the
+
+fact
+
+that
+
+An application
+
+There are many problems which can be solved using the
+proposed algorithm. As a useful example, we use the
+algorithm for solving the Diophantine inequality
+a1 x1 + . . . + ar xr ≤ n.
+
+(9)
+
+is the number of nonnegative integer solutions for this
+equation. It should be noted that, the formula is true
+when r is a positive integer and r > 3. However, if r = 3
+we use
+
+n − w1 − ... − wr−2 + 1
+1
+
+wr−2 =0
+n+1−w1 −...−wr−3 −1
+
+...
+
+1
+wr−1 =0
+
+(13)
+
+Now, let ai = 1 for i = 3, ..., r. In this case, we must ﬁnd
+the number of nonnegative integer solutions for
+
+a1 x1 + a2 x2 + x3 + . . . + xr = n.
+
+...
+
+w1 =0 w2 =0
+n−w1 −...−wr−3
+
+n−w1
+
+=
+
+n−w1 −...−wr−2
+
+n−w1
+
+s(a1 , . . . , ar ; n) =
+
+I(a2 , w1 ) as the number of nonnegative integer sow1 =0
+
+1 ar |n − a1 w1 − ...ar−1 wr−1
+0
+otherwise.
+(12)
+
+I(ar ; w1 , . . . , wr−1 ) =
+
+(14)
+
+Let us now brieﬂy consider the characteristic of the
+Diophantine Inequality (for more information see, for
+example, [16][17][18][19]). The main statement of the
+aforementioned theorem is in the language of lattices in
+number theory. That is for any convex set in the rdimensional Euclidean space Rr symmetric with respect
+to the origin, and with volume greater than 2r , must contain a lattice point other than that of the origin. In the
+language of linear forms the problem is restated as
+r
+
+aij xj = Li (X), 1 ≤ i ≤ r,
+
+(15)
+
+j=1
+
+Continuing the procedure, we can get the following formula for the number of nonnegative integer solutions of
+(3).
+
+with real coeﬃcients aij such that det(aij ) = 0, supposing that there exist r positive real numbers bi , i = 1 . . . r
+r
+with i=1 bi ≥ det(aij ). Then there exists an integer
+
+(Advance online publication: 1 February 2010)
+
+IAENG International Journal of Applied Mathematics, 40:1, IJAM_40_1_01
+______________________________________________________________________________________
+
+vector C such that Li (C) ≤ bi , 1 ≤ i ≤ r, thus implying that a solution exists for the above equations and
+indeed the implied inequality. The paper by Cheema,
+[13] suggests techniques similar to the programming of
+this research in its working, and indeed uses Minkowski’s
+theorem to state that, where || · || denotes the distance
+of a number from its nearest integer, that there always
+exists a nonzero integer-vector solution X = (x1 , . . . , xr )
+to the inequalities:
+||Lj (X)|| ≤ C, (1 ≤ j ≤ r).
+
+[7]. Padberg [12] considered the following lower bound
+(n + 1)r
+≤N
+r
+r! i=1 ai
+
+Very soon after [14] was submitted, Padberg took its result in [12] and sharpened Beged-Dov’s result to the following inequality:
+
+max
+
+(16)
+
+Another practical application of the discussed problem is
+that of the “Knapsack” model, encountered in many areas
+with a cleat explanation oﬀered in [14]; “the question of
+how to ﬁll a knapsack of limited weight capacity with
+diﬀerent items which best meet the needs of one’s trip”.
+Beged-Dov [14], ﬁrst introduced bounds on the number,
+r
+
+N , of solutions to
+natural-valued, as
+nr
+ai
+i=1
+
+(n + 1)r
+,
+r
+r! i=1 ai
+
+r + a∗
+r
+
+≤N
+
+and
+
+(20)
+(n +
+
+N ≤ min
+
+r!
+
+r
+r
+j=1 aj )
+,
+r
+i=1 ai
+
+r + a∗∗
+r
+
+Here a∗ and a∗∗ are integers satisfying a∗ ≤
+
+.
+n
+aj
+
+and a∗∗ ≥
+
+n
+aj
+
+i=1
+
+≤N ≤
+
+r
+
+r!
+
+ai xi ≤ n with the ai ’s all being
+
+(19)
+
+(n + a1 + . . . + ar )r
+r
+
+r!
+
+for all j = 1, . . . , r. The initial adjustment to the
+original result is made by deﬁnition of the new pyramid
+P (n + δ), whence
+r
+
+.
+
+(17)
+
+ai
+
+xij ≤ n+δ, xij ≥ 0 for j = 1, . . . r, 0 ≤ δ < 1, (21)
+j=1
+
+i=1
+
+These bounds were obtained in the following way. Denote
+the rectangular box B(y1 , . . . , yr ) as the set of points Y =
+(y1 , . . . , yr ) such that
+
+Then as above, taking a vector ξ ∈ P (n + δ), then summing over each element of the vector we have (since
+[x] ≤ x, ∀x > 0):
+r
+
+ai xi ≤ yi ≤ (xi + 1)ai for i = 1, . . . , r
+
+(18)
+
+r
+
+which has r-dimensional volume i=1 ai . Secondly, der
+ﬁne the pyramid P (n) with volume n , which denotes
+r!
+the set of points satisfying yi ≥ 0 for i = 1, . . . , r and
+r
+i=1 yi ≤ n. The bounds are obtained as a consequence
+of the fact that each point xi as deﬁned above belongs
+y
+to a unique B, which is the one with xi = ai , and
+i
+if that xi lies in the pyramid P (n), then it necessarily
+obeys the linear diophantine inequality in question. So
+the union of the N boxes contains P (n). This somewhat
+simple topological argument allows the derivation of the
+above bounds. To add weight to Beged-Dov’s argument
+in [14], some experimental results are calculated using an
+algorithm which could be considered to be an early precursor to the results of this paper. The tendency of the
+upper and lower bounds of the number of solutions to
+the linear Diophantine inequality to become close with
+increased number of variables and right hand side is also
+touched upon.
+Padberg and Lambe sought to respectively improve upon
+Beged-Dov’s bounds. In the latter case an approximate
+number of solutions was eventually sought and found in
+
+ξj
+xj
+
+xj
+j=1
+
+r
+
+≤
+
+xj
+j=1
+
+ξj
+xj
+
+≤ n + δ.
+
+(22)
+
+(n + δ)r
+≤ N is obtained with the
+r
+r! j=1 aj
+substitution of P (n + δ) with P (n) in the previous proof,
+which is then sharpened by taking the limit of this bound
+as δ → 1. The result is improved further by making the
+above substitution for a∗ and a∗∗ above, noting that
+The lower bound
+
+r
+
+r
+
+xj ≤
+j=1
+
+xj
+j=1
+
+aj
+n
+≤
+,
+amin
+amin
+
+(23)
+
+to obtain the bounds stated above.
+The paper of Padberg also introduces the formula for
+the number of possible partitions explored in this paper,
+and quotes that another proof is mentioned in the book
+[15]. Lambe in his paper [11] of 1974 introduced bounds
+which in most cases were better still, than what had been
+previously discussed:
+n+r
+r
+
+r
+
+1
+≤N ≤
+ai
+i=1
+
+(Advance online publication: 1 February 2010)
+
+n + ra
+r
+
+r
+
+1
+,
+ai
+i=1
+
+(24)
+
+IAENG International Journal of Applied Mathematics, 40:1, IJAM_40_1_01
+______________________________________________________________________________________
+
+Table 1: Comparison between current methods and the new algorithm.
+{ai }
+
+n
+
+New (Exact)
+
+2, 3, 5
+2, 3, 5
+2, 3, 5
+2, 3, 5
+1, 1, 10
+2, 3, 4, 4, 5
+2, 4, 4, 4, 5
+2, 3, 4, 4, 5, 7
+2, 3, 4, 5, 6, 7
+2, 3, 5, 7, 9, 11, 13
+
+10
+50
+100
+200
+12
+11
+11
+15
+20
+50
+
+20
+947
+6518
+48202
+97
+53
+41
+162
+364
+8872
+
+(17)
+lower upper
+6
+44
+695
+1200
+5556
+7394
+44444 51450
+29
+230
+3
+356
+2
+316
+5
+1693
+18
+2970
+574
+73412
+
+r
+
+where a = i=1 ai . His new bounds were also able to
+r
+show that the ratio of upper to lower bounds tends to
+unity as r and n grow large. To attain the lower bound,
+the inequalities
+g−1
+i=1
+
+yi ≤ n,
+
+with the yi ’s all integers and g ∈ {1, . . . r + 1} are considered. The proof requires - where Pi denotes the number
+of feasible (that is, nonnegative) solutions to (25) - the
+proving of
+Pg ≤ ag Pg+1 , for g = 1, . . . , r.
+
+(26)
+
+The proof of the upper bound is achieved using the inequalities
+r
+
+ai yi +
+i=1
+
+r
+
+yi ≤ n +
+i=g
+
+(xi − 1),
+
+(27)
+
+i=g
+
+and requires the assertion - where Qi denotes the number
+of feasible solutions to (25) and (27) - that
+
+[12/10] [(12−10w1 )/1] [(12−10w1 −w2 )/1]
+
+1=
+w1 =0
+
+w2 =0
+12
+
+w3 =0
+
+12−w2
+
+=
+
+2
+
+As mentioned above, Lambe in [7], discovered upper and
+lower bounds for this number. However, the algorithm
+proposed here is able to compute the exact number of
+solutions. To do this, we convert (14) to (3) by adding
+an extra nonnegative integer variable xr to (14). Then
+we need to solve a1 x1 + . . . + ar−1 xr−1 + xr = n and
+using the algorithm the number of nonnegative integer
+solutions to (14) is:
+s(a1 , . . . , ar−1 , 1; n) =
+[(n−a1 x1 −...−ar−2 xr−2 )/ar−1 ]
+
+...
+w1 =0
+
+w2 =0
+
+2−w2
+
+1+
+
+1 = 97.
+
+(31)
+
+w2 =0 w3 =0
+
+(28)
+
+Both are achieved in similar fashion.
+
+[n/a1 ] [(n−a1 x1 )/a2 ]
+
+(30)
+
+The lower and upper bounds on the number of solutions
+to this inequality, 4 and 455 respectively, are obtained
+from the algorithm of (20), whilst we know the exact
+number of solution is 97. It can be seen easily that these
+bounds represent a wide deviation from the actual number of solutions. Let us now use the proposed algorithm
+for solving (30). As we mentioned above, ﬁrst we need
+to reform (30) to 10x1 + x2 + x3 + x4 = 12. Thus, the
+solution is as follows
+
+w2 =0 w3 =0
+
+Qg ≥ ag Qg+1 , for g = 1, . . . , r.
+
+(19)
+lower
+8
+737
+5724
+45115
+37
+21
+21
+7
+24
+659
+
+10x1 + x2 + x3 ≤ 12.
+
+(25)
+
+i=g
+
+(24)
+lower upper
+10
+38
+781
+1140
+5896
+7194
+45791 50717
+46
+202
+9
+247
+7
+223
+16
+1142
+46
+2130
+978
+59228
+
+all w1 , . . . , wr−1 . Let us ﬁrst consider an simple example. Suppose we are interested in ﬁnding the number of
+nonnegative solutions to
+
+r
+
+ai yi +
+
+g−1
+
+(20)
+lower upper
+10
+56
+737
+1200
+5724
+73946
+45115 51450
+37
+230
+21
+252
+21
+252
+28
+1693
+28
+2970
+659
+73412
+
+(29)
+
+1.
+wr−1 =0
+
+It should be noted that in the reduced form of inequality
+we have ar = 1. Therefore I(ar ; w1 , . . . , wr−1 ) = 1 for
+
+Table 1 shows the resulting lower and upper bounds given
+for the number of solutions to the inequality with coefﬁcients ai and relevant n. The third column shows the
+exact number of solutions given by the method of this
+note.
+
+References
+[1] H. K. Rosen, G. J. Michaels, L. J. Gross, W. J.
+Grossman, R. D. Shier, Handbook of Discrete and
+Combinatorial Mathematics, CRC Press, New York,
+2000.
+[2] A. Tripathi, On a Linear Diophantine Problem of
+Frobenius, Integers: Electronic Journal of Combinatorial Number Theory, 6, no. A14, pp. 1-6, 2006.
+[3] S. M. Ross, A First Course in Probability, CRC
+Press, New York, 1976.
+
+(Advance online publication: 1 February 2010)
+
+IAENG International Journal of Applied Mathematics, 40:1, IJAM_40_1_01
+______________________________________________________________________________________
+
+[4] V. N. Murty, Counting the Integer Solutions of a
+Linear Equation with Unit Coeﬃcients. Mathematics Magazine, 54, no. 2, pp. 79-81, 1981.
+[5] C. Eisenbeis, O. Temam, and H. Wijshoﬀ, On efﬁciently characterizing solutions of linear diophantine equations and its application to data dependence analysis. In Seventh International Symposium
+on Computer and Information Sciences, Antalya,
+Turquie, 1992. Note: Appeared also as INRIA Research Report No 1616, Fvrier 1992.
+
+[17] V. G. Sprindzuk, Classical Diophantine Equation,
+Springer-Vlarge, New York, 1993.
+[18] B. M. M. de Weger, Algorithms for Diophantine
+equations. Centrum Voor Wiskunde en Informatica,
+1989.
+[19] H. Davenport, Analytic Methods for Diophantine
+Equations and Diophantine Inequalities. Cambridge
+University Press, 2005.
+
+[6] M. Ya. Antimirov, A. Matvejevs, Evaluation of the
+Number of Non-Negative Solutions of Diophantine
+Equations, 5th Latvian Mathematical Conference,
+Daugavpils, Latvia, 2004.
+[7] T. A. Lambe, Upper bound on the Number of
+Nonnegative integer Solutions to a linear equation.
+SIAM, Journal of Applied Mathematics, 32, no. 1,
+pp. 215-219, 1977.
+[8] K. Aardal, and C. A. J. Hurkens and A. K. Lenstra,
+Solving a Linear Diophantine Equation with Lower
+and Upper Bounds on the Variables, Proceedings of
+the 6th International IPCO Conference on Integer
+Programming and Combinatorial Optimization, pp.
+229-242, 1998.
+[9] S. Mertens, The Easiest Hard Problem: Number
+Partitioning. ArXiv Condensed Matter e-prints,
+http://adsabs.harvard.edu/abs/2003cond.mat.10317M
+[10] D. H. Lehmer, A note on the Linear Diophantine
+Equation, The American Mathematical Monthly, 48
+(4), pp. 240-246, 1941.
+[11] T. A. Lambe, Bounds on the Number of Feasible
+Solutions to a Knapsack Problem. SIAM Journal on
+Applied Mathematics, 26(2), pp. 302-305, 1974.
+[12] M. W. Padberg, A Remark on “An Inequality for
+the Number of Lattice Points in a Simplex”, SIAM
+Journal on Applied Mathematics, 20 (4), pp. 638641, 1971.
+[13] M. S. Cheema, Integral Solutions of a System
+of Linear Equations, The American Mathematical
+Monthly,73 (5), pp. 487-490, 1966.
+[14] A. G. Beged-Dov, Lower and Upper Bounds for the
+Number of Lattice Points in a Simplex, SIAM Journal on Applied Mathematics, 22 (1), pp. 106-108,
+1972.
+[15] W. Feller, An Introduction to Probability Theory and
+its Applications, Volume 1, John Wiley, New York,
+1968.
+[16] S. Lang, Survey on Diophantine Geometry. SpringerVlarge, New York, 1997.
+
+(Advance online publication: 1 February 2010)
+
+

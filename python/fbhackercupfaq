@@ -1,0 +1,125 @@
+What is the Hacker Cup?
+The Hacker Cup is Facebook's international coding competition. The contest consists of four online rounds and a final round held at Facebook's headquarters. This is your chance to compete against the world's best programmers and potentially win the title of world champion and other awesome prizes.
+
+What prizes can be won?
+The top 25 scoring contestants from Online Round 3 will be flown out to Facebook headquarters in Menlo Park, California, USA to compete in the Finals. The onsite finals will happen from March 16 - 17, 2012. All travel and accommodations will be covered by Facebook.
+
+The finalists will be competing for:
+1st place: $5,000 USD
+2nd place: $2,000 USD
+3rd place: $1,000 USD
+4th - 25th place: $100 USD
+The top 100 scoring contestants in Online Round 2 will get a Hacker Cup t-shirt. A cash prize of equivalent value may be given where required by law, or at Facebook's discretion. Any duties and taxes (if applicable) are the sole responsibility of the recipients.
+
+Where can I register?
+Register here.
+Registration opens on January 1, 2012 at 8:00 AM Pacific Time (PT) and ends on January 23, 2012 at 4:00 PM PT. Advancement from the Qualification Round is necessary in order to participate in Online Round 1. Only competitors who correctly solve at least 1 problem will advance to Online Round 1.
+
+Check back on the Facebook Hacker Cup page on January 1 to register!
+
+Who is eligible to compete?
+You are eligible if you meet the following requirements at the time of registration:
+
+You are 18 years of age or older.
+You are not a current employee/intern of Facebook Inc.
+You are not an immediate family member (parent, child, sibling, or spouse) of, or living in the same household as, a Facebook employee or an employee of any Facebook affiliate or subsidiary; and
+You are not a resident of Quebec or anywhere where the contest is prohibited by law. Individuals and entities restricted by applicable export controls and sanctions programs are ineligible to participate in the Contest. Facebook reserves the right to relax any of these restrictions if permitted by law before the start of the Qualification Round.
+
+For more details on the Eligibility rules and regulations, please review the Term & Conditions.
+
+How many rounds are there?
+Qualification Round
+The competition commences with a 72-hour Qualification Round on January 20, 2012 at 4:00 PM PT and ends on January 23, 2012 at 4:00 PM PT. All registered competitors will be presented with at least three problems. Only competitors who correctly solve at least 1 problem will advance to Online Round 1.
+
+Online Round 1
+Online Round 1 will last 24 hours from January 28, 2012 at 10:00 AM PT and ends on January 29, 2012 at 10:00 AM PT. 
+
+Of those participating in Online Round 1, the top-scoring 500 competitors will advance to Online Round 2. (All competitors who attain the same amount of points as the 500th place person will advance.) 
+
+
+Online Round 2
+Online Round 2 will last 3 hours from February 4, 2012 at 1:00 PM PT and end February 4, 2012 at 4:00 PM PT.
+
+The 500 (or more) competitors will have three hours to solve the presented problem sets. The top-scoring 100 participants from Online Round 2 will receive an official Hacker Cup t-shirt. The top-scoring 100 competitors from Online Round 2 will be notified via email that they have advanced to Online Round 3.
+
+Online Round 3
+Online Round 3 will last 3 hours from February 11, 2012 at 1:00 PM PT and end February 11, 2012 at 4:00 PM PT.
+
+The 100 competitors will have three hours to solve the presented problem sets. The top-scoring 25 competitors from Online Round 3 will be notified via email that they have advanced to the final round at Facebook.
+
+Onsite Final Round
+Facebook will fly the top-scoring 25 competitors to Menlo Park, California, for the final round of competition from March 16 - 17, 2012, where they'll receive some great cash prizes and other awesome goodies. Out of these 25 finalists, one champion will emerge and be immortalized on the Hacker Cup trophy. Finalists will be responsible for obtaining their own entry visa before arrival in the USA; however, Facebook will reimburse the finalist for any visa application fee and up to $100 USD in travel expenses incurred in obtaining the visa. Facebook will not reimburse any fees or expenses related to obtaining a passport.
+
+How do you win?
+Point Structure
+Each problem is worth a single point. The contestant with the highest score wins. Points scored in one round are used only to determine standing in that round. Points do not carry over from each individual round.
+
+Penalty Time and Ties
+If there is a tie in points, the contestant with the lowest penalty time wins.
+
+A competitor's penalty time for a given Round is equal to the sum of the Submission times of the last output that was submitted by the competitor and judged correct for each Problem in the Round (time is measured from the start of the Round).
+
+How does it work?
+Duration
+There are multiple rounds to the Facebook Hacker Cup. The Qualification Round lasts 72-hours. Online Round 1 lasts 24-hours. Online Round 2 and 3 are each 3-hours long.
+
+Environment
+You can use any programming language to solve the problems, using any development environment or text editor, as long as the compiler or interpreter you used for that language is freely available and easy to download and use. Time-limited trials for compilers and interpreters are disallowed. Visual Studio is acceptable as a compiler, since there's a free version of (almost the same) compiler available, Visual Studio Express. Facebook reserves the right to make further exceptions on a case-by-case basis.
+
+The Problems
+Each contest consists of 3 algorithmic problems. The problems will be listed in the panel on the top left side of the page. Click on a problem’s name to view the statement for that problem, which will appear in the middle of the page.
+
+The problem statement will be rendered as HTML, possibly containing images. It will include one or more sample test cases and provide links to download input and submit output.
+
+Downloading Input
+At the bottom of the problem statement will be a link to download the input file. The timer begins immediately after you start to download the input file. You will have six minutes to upload the output from your program.
+
+You have one chance, to solve the input. You may resubmit during this time. If you run out of time, you cannot download another input file.
+
+Re-downloading Inputs
+You may re-download your input file at any time during the six-minute time period.
+
+What are the Submission Rules and Judging?
+After downloading the input file, you will have six minutes to submit the output (along with your source code). There is only one input file, but you can submit as many times as you wish during the six minutes. Your last submission within the time limit counts as your final answer. You will find out if your answer was correct after the contest.
+
+*Note: You may experience latency issues between your computer and our servers and are therefore advised to submit with an adequate amount of time remaining in your six-minute period.
+
+How We Will Judge Your Submission
+1.	Minor differences in whitespace are ignored. In particular, every non-empty sequence of whitespace characters (except newlines and non-ASCII characters) is treated as a single space. Unix, Mac and Windows endlines are all acceptable ways of ending lines.
+2.	Leading and trailing whitespace on each line is ignored. The remaining, non-empty lines are compared pairwise, using rules 1 and 3.
+3.	Two floating point numbers are considered equal if their absolute or relative difference is smaller than 1e-6, unless the problem statement says otherwise. This does not apply to integers. Two integers are considered equal only when they are exactly equal.
+
+Source Code Submission Rules
+You must upload all source code used to solve each input set as part of the submission of your solution. You cannot submit your source code files after the contest. At the end of the contest, any user can view all of the source code submitted. Both the administrators and other contestants should be able to reproduce your output using your source code.
+
+Deliberately obfuscated source code and empty source code files are not allowed. Facebook reserves the right to disqualify any submissions that we believe do not comply with the rules.
+
+After a round, if Facebook discovers that someone submitted source code that doesn't match the submitted output (including if you tell us that your source code doesn't match), Facebook judges will look at that code, look at other code submitted by that user, and determine whether a discrepancy exists. If a discrepancy does exist we will determine whether it is a trivial discrepancy, or a non-trivial discrepancy. If there is no discrepancy, nothing happens. If there is a trivial discrepancy, the contestant will receive five penalty minutes but will keep his or her point for that problem. If there is a non-trivial discrepancy, the contestant will lose credit for that problem.
+
+File Type for Source Code
+You must submit plain text or zipped plain text for the source files. The maximum file size that you can upload is 100kB. You can upload multiple files, or you can upload a zipped source code file as long as the contents do not exceed 1MB.
+
+Solving Problems by Hand
+If you solve a problem either fully or partly by hand, please submit a text file explaining that you solved the problem by hand. We reserve the right to disqualify any submissions that we believe do not comply with the rules.
+
+Solving problems using methods other than a programming language
+If you use specific software to solve a problem, specify this in the file. That software is held to the same restrictions as compilers and interpreters as described above. Also, please provide any input scripts you wrote for the software used (e.g., mathematical software scripts, spreadsheets, etc.).
+
+The program does not necessarily need to produce the output automatically, so it can be interactive. If you wrote an interactive command line script, you should submit all commands used to solve the problem, e.g. a linux command line with awk, Hugs commands, Octave interpreter commands, shell commands, etc.
+
+Solving problems using several programs
+If you used several programs to solve a problem, even user-assisted programs, please submit all of the programs.
+
+Solving problems using standard and non-standard libraries
+You may use standard libraries, such as Boost, and other open source libraries. If you use a publicly available library, you may submit a link to the library's website rather than including the contents of the library in your source code submission.
+
+You also may use code from non-standard libraries, such as coding libraries from your school's ACM ICPC team, as long as you have a license to use them. You will need to upload all code used in solving each input/output set, whether you are using standard or non-standard libraries. If the source code and the zipped version of the library are larger than 1MB, you may provide a link to the library as long as the library is accessible after the contest.
+
+Where can I find the Terms & Conditions?
+Here are the Term & Conditions.
+
+How can I practice?
+You can practice by trying to solve some problems from the 2011 Hacker Cup.
+
+2011 Online Qualification Problems
+2011 Online Round 1 Problems

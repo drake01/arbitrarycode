@@ -1,0 +1,49 @@
+#! /usr/bin/vvp
+:ivl_version "0.9.2 " "(v0_9_2)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0xf6c380 .scope module, "stimulus" "stimulus" 2 20;
+ .timescale 0 0;
+v0xf7cbe0_0 .var "A", 0 0;
+v0xf7cc80_0 .var "B", 0 0;
+RS_0x7f33187a90d8 .resolv tri, L_0xf7d030, L_0xf7d180, L_0xf7d230, C4<z>;
+v0xf7cd30_0 .net8 "OUT", 0 0, RS_0x7f33187a90d8; 3 drivers, strength-aware
+S_0xf6c470 .scope module, "n1" "my_nor" 2 24, 2 2, S_0xf6c380;
+ .timescale 0 0;
+L_0xf7cf00 .functor PMOS 1, C8<771>, v0xf7cc80_0, C4<0>, C4<0>;
+L_0xf7d030 .functor PMOS 1, L_0xf7cf00, v0xf7cbe0_0, C4<0>, C4<0>;
+L_0xf7d180 .functor NMOS 1, C8<770>, v0xf7cbe0_0, C4<0>, C4<0>;
+L_0xf7d230 .functor NMOS 1, C8<770>, v0xf7cc80_0, C4<0>, C4<0>;
+v0xf6c560_0 .net "a", 0 0, v0xf7cbe0_0; 1 drivers
+v0xf7c870_0 .net "b", 0 0, v0xf7cc80_0; 1 drivers
+v0xf7c910_0 .net8 "c", 0 0, L_0xf7cf00; 1 drivers, strength-aware
+v0xf7c9b0_0 .net8 "gnd", 0 0, C8<770>; 1 drivers, strength-aware
+v0xf7ca60_0 .alias "out", 0 0, v0xf7cd30_0;
+v0xf7cb00_0 .net8 "pwr", 0 0, C8<771>; 1 drivers, strength-aware
+    .scope S_0xf6c380;
+T_0 ;
+    %set/v v0xf7cbe0_0, 0, 1;
+    %set/v v0xf7cc80_0, 0, 1;
+    %delay 5, 0;
+    %set/v v0xf7cbe0_0, 0, 1;
+    %set/v v0xf7cc80_0, 1, 1;
+    %delay 5, 0;
+    %set/v v0xf7cbe0_0, 1, 1;
+    %set/v v0xf7cc80_0, 0, 1;
+    %delay 5, 0;
+    %set/v v0xf7cbe0_0, 1, 1;
+    %set/v v0xf7cc80_0, 1, 1;
+    %end;
+    .thread T_0;
+    .scope S_0xf6c380;
+T_1 ;
+    %vpi_call 2 36 "$monitor", $time, "  OUT = %b, A = %b, B = %b", v0xf7cd30_0, v0xf7cbe0_0, v0xf7cc80_0;
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "switch.v";

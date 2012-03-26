@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+GetTimeMs64	./fact.cpp	/^int GetTimeMs64()$/;"	f
+GetTimeMs64	./timecalculator.cpp	/^int64 GetTimeMs64()$/;"	f
+MagicDiamonds	./magicdiamond.cpp	/^class MagicDiamonds {$/;"	c	file:
+main	./270.cpp	/^int main()$/;"	f
+main	./4554-2.cpp	/^int main()$/;"	f
+main	./4554-3.cpp	/^int main()$/;"	f
+main	./4554.cpp	/^int main()$/;"	f
+main	./SAMER08F.c	/^int main()$/;"	f
+main	./addrev.cpp	/^int main()$/;"	f
+main	./face.cpp	/^int main()$/;"	f
+main	./fact.cpp	/^int main()$/;"	f
+main	./filegen.cpp	/^int main()$/;"	f
+main	./harry.cpp	/^int main()$/;"	f
+main	./life.cpp	/^int main()$/;"	f
+main	./nextpalindrome.cpp	/^int main()$/;"	f
+main	./pr1.cpp	/^int main()$/;"	f
+main	./prime.cpp	/^int main()$/;"	f
+main	./prime2.cpp	/^int main()$/;"	f
+main	./primesupto9zeros.cpp	/^int main()$/;"	f
+main	./puzzle100.cpp	/^int main()$/;"	f
+main	./puzzle12100.cpp	/^int main()$/;"	f
+main	./puzzle1to100lights.cpp	/^int main()$/;"	f
+main	./speedlm.c	/^int main()$/;"	f
+main	./speedlm2.c	/^int main()$/;"	f
+main	./speedlm2.cpp	/^int main()$/;"	f
+main	./speedlm4.c	/^int main()$/;"	f
+minimalTransfer	./magicdiamond.cpp	/^long long MagicDiamonds::minimalTransfer(long long x) {$/;"	f	class:MagicDiamonds

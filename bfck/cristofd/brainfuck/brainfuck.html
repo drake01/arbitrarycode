@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html><head><meta http-equiv="content-type" content="text/html; charset=us-ascii"><title>Yet another brainfuck reference.</title><meta name="description" content="A complete reference to the brainfuck programming language."><link rel="icon" href="favicon.ico"><link rel="shortcut icon" href="favicon.ico"></head><body bgcolor="#000000" text="#ffffff" link="#ff0000" vlink="#990000">
+<table><tr><td width=40></td><td width=500>
+<br><br><img src="random.png" alt=""><h2>Yet another <a href="index.html">brainfuck</a> reference.</h2>
+<i>Who can program anything useful with it? :)</i><br><br><br>
+
+The brainfuck language is a minimalistic imperative programming language, designed by Urban M&uuml;ller around 1993. The canonical brainfuck distribution is at <a href="http://wuarchive.wustl.edu/pub/aminet/dev/lang/brainfuck-2.lha">http://wuarchive.wustl.edu/pub/aminet/dev/lang/brainfuck-2.lha</a>. Though Turing-complete, brainfuck was not intended for serious use. This page aims to be a complete description of the language itself, as distinct from implementations or perversions of the language, or code written in it.<br><br>
+
+The source code for a brainfuck program consists of a single file of ASCII text, whose filename should ideally end with ".b" <font size=-1>(the ending ".bf" is rather for Befunge source code)</font>. Each character in the file is either a command, or not. Characters that are not commands are ignored. <font size=-2>(This should presumably include extended-ASCII characters.)</font><br><br>
+
+A brainfuck program uses a movable pointer to manipulate an array, or ordered set, of at least 30,000 cells. Each cell holds an integer value (minimally and usually one byte), and has an initial value of zero; the pointer initially indicates the leftmost cell. <img src="array.png" hspace=8 vspace=2 align=top alt=""><br><br>
+
+The control flow, which determines which commands are executed when, is as follows. Control begins at the first command, if any; when a command has control, it is executed, and by default control passes to the following command, if any; if and when no command has control, the program terminates.<br><br>
+
+There are eight brainfuck commands. They could also be called "instructions". <font size=-1>"Operators" would be wrong and "statements" would be a stretch.</font><br><br>
+<font size="+1">The <font color="#ff00ff">+</font> command increments (increases by one) the value of the cell indicated by the pointer.</font> <font size=-1>If that cell was already at its maximum value, it may (or may not) assume its minimum value.</font><br><br>
+<font size="+1">The <font color="#ff00ff">-</font> command decrements (decreases by one) the value of the cell indicated by the pointer.</font> <font size=-1>If that cell was already at its minimum value, it may (or may not) assume its maximum value.</font><br><br>
+<font size="+1">The <font color="#ff00ff">&gt;</font> command moves the pointer to the next cell to the right.</font> <font size=-1>If the pointer was already at the rightmost cell (if any) the results are unpredictable.</font><br><br>
+<font size="+1">The <font color="#ff00ff">&lt;</font> command moves the pointer to the next cell to the left.</font> <font size=-1>If the pointer was already at the leftmost cell, the results are unpredictable.</font><br><br>
+<font size="+1">The <font color="#ff00ff">[</font> command checks the value of the cell indicated by the pointer, and if its value is zero, control passes not to the next command, but to the command following the matching ']' command.</font><br><br>
+<font size="+1">The <font color="#ff00ff">]</font> command checks the value of the cell indicated by the pointer, and if its value is nonzero, control passes not to the next command, but to the command following the matching '[' command.</font><br><br>
+
+<table><tr><td width=40></td><td>
+<font size=-1>(This word "matching" has confused some people. '[' and ']' nest just as brackets and parentheses normally do. For any '[', the matching ']' is:<br>
+-somewhere after it in the source file;<br>
+-separated from it by exactly as many '['s as ']'s;<br>
+-the first ']' that meets these two conditions.<br>
+The easy way to match brackets is to use a stack: when a '[' is encountered, push its location on the stack; when a ']' is encountered, pop the location of the matching '[' off the stack.
+)</font><br><br>
+An unmatched '[' or ']' in a brainfuck program constitutes a syntax error. <font size=-1>Note that this can happen even when the numbers are equal; e.g. "][" is a program with two unmatched brackets.</font><br><br>
+For some purposes it is clearest to regard '[' and ']' not as two separate commands, but as constituents of a looping construct, which causes the entire command sequence enclosed between '[' and ']' to be performed zero or more times, ceasing when the pointer indicates a cell whose value is zero; if the value is zero initially, the loop will be performed zero times, i.e. the enclosed command sequence will be skipped. The enclosed command sequence may itself contain loops.<br>
+<font size=-1>When '[' and ']' are regarded as separate commands, there are many equivalent versions of their semantics. The version above is the most symmetrical and time-efficient.</font>
+</td></tr></table>
+
+<br><br>
+
+<font size="+1">The <font color="#ff00ff">.</font> command outputs the value of the cell indicated by the pointer.</font> <font size=-1>If that value will not fit in a byte it may first be reduced modulo 256.</font><br><br>
+<font size="+1">The <font color="#ff00ff">,</font> command requests one byte of input, and sets the cell indicated by the pointer to the value received, if any.</font><br><br>
+
+<table><tr><td width=40></td><td>
+The brainfuck input/output model implicitly assumes an old-style textual i/o framework; people implementing brainfuck in environments that do not provide one must decide which of its features they want to bother reproducing. Brainfuck's natural i/o habitat is something like this:<br><br>
+
+-Input and output are done in bytes.<br><br>
+
+-By default, the bytes represent ASCII characters, the input is received from a keyboard, and bytes that are typed on the keyboard, or output by the program, are displayed as characters on a monitor, in a monospaced font, with input and output interspersed together in chronological order.<br><br>
+
+-However, at the user's request, the input may be received from, and/or the output may be sent to, a file or the like instead, and in that case will not be displayed on the monitor, and will not necessarily be interpreted as representing text.<br><br>
+
+-Input bytes will be held until they are requested by the program; bytes from the keyboard may also be line-buffered, i.e. they may not be available to the program until a newline has been typed. (In brainfuck, the ASCII code for a newline is ten ("line feed"). <font size=-1>(This is based on the original implementations and example programs and an easy majority of subsequent usage. Brainfuck implementations for some platforms have to do a minor translation to accommodate this.)</font>)<br><br>
+
+-Conversely, if a program requests input from the keyboard and there is none available, the program will be paused until more input becomes available.<br><br>
+
+-However, if the input is coming from a file and all the bytes from that file have been received already, or if the user signals an analogous end-of-input condition from the keyboard, a request for input will not pause the program; instead, the input command will have no effect and the program will go on running. <font size=-1>At least, that's the behavior of Urban M&uuml;ller's compiler and three-line C interpreter; some other implementations also set the cell indicated by the pointer to -1, 0, or 255. Several reasons for preferring the "no change" behavior are mentioned <a href="epistle.html">here</a>.</font>
+</td></tr></table>
+<br><br>
+
+Two other characters have special meanings in connection with the brainfuck language; however, these are features of certain implementations, rather than features of the language itself.
+<br><br>
+The <font color="#ff00ff">#</font> character, in some implementations, functions as a command which outputs the program's internal state, for debugging purposes. <font size=-1>This command originated as a feature of Urban M&uuml;ller's original interpreter in C; there it outputs the values of the first ten array cells in decimal, and indicates the pointer's location.</font><br><br>
+The <font color="#ff00ff">!</font> character is used in connection with Frans Faase's <a href="http://home.planet.nl/~faase009/Ha_bf_inter.html">brainfuck interpreter written in brainfuck</a>, and my <a href="dbfi.b">clone</a> of same, to separate brainfuck programs from the input for them, since these interpreters must receive both programs and input via brainfuck's single input channel and must distinguish them somehow.<br><br>
+
+
+<h3><a name="turing">Turing-completeness</a></h3>
+In the documentation to version 2, Urban M&uuml;ller said "Now while this seems to be a pretty useless language, it can be proven that it can compute every solvable mathematical problem (if we ignore the array size limit and the executable size limit)." Frans Faase gives <a href="http://home.planet.nl/~faase009/Ha_bf_Turing.html">several proofs of brainfuck's Turing-completeness</a>, which make subtly different assumptions. The first assumes an unlimited array of unlimited-range variables; the second, based on <a href="utm.b">utm.b</a>, assumes an unlimited array of variables with range at least 0-100; and the third assumes an array of <a href="http://www.hevanet.com/cristofd/brainfuck/urmutm.b">at least five unlimited-range variables</a>. The second proof's assumptions are closest to the original implementations (and most subsequent ones); and that proof also shows that brainfuck remains Turing-complete when limited in certain ways. Any brainfuck dialect or implementation that can run utm.b running on arbitrary valid input is Turing-complete; likewise any brainfuck dialect or implementation that can run <a href="dbfi.b">dbfi.b</a> running utm.b running on arbitrary valid input. This means brainfuck is still Turing-complete when, e.g., the program length is limited to 423 commands and the depth of nested brackets to 7. <font size=-1>The program size can easily be further reduced to 273, and the range of the variables to 0-23, by changing some i/o formats.</font><br><br><br>
+
+-Daniel B. Cristofani (cristofdathevanetdotcom)<br><br><br>
+
+<a href="index.html">back to main brainfuck page</a><br><br>
+</td><td><img src="eyes.png" hspace=24 alt=""></td></tr></table>
+</body></html>

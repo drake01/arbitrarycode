@@ -1,0 +1,1 @@
+wget -b -o ./hellog -Q10m --mirror -p --convert-links -P ./.tt spider.nitt.edu/wordpress/
